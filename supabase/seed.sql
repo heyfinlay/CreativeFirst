@@ -1,0 +1,18 @@
+-- Seed guidance (optional):
+-- Supabase local resets will run this file. To seed demo data, replace the
+-- UUIDs below with real auth user IDs from your local auth users.
+--
+-- Example:
+-- insert into profiles (user_id, role, display_name)
+-- values ('00000000-0000-0000-0000-000000000000', 'brand', 'Demo Brand Owner');
+--
+-- insert into brands (user_id, business_name, website, business_email)
+-- values ('00000000-0000-0000-0000-000000000000', 'Studio North', 'https://studionorth.au', 'hello@studionorth.au');
+--
+-- insert into contracts (brand_user_id, title, description, status, min_value_cents)
+-- values
+--   ('00000000-0000-0000-0000-000000000000', 'Spring TikTok Launch', '3 short-form videos with usage rights for 30 days.', 'live', 15000),
+--   ('00000000-0000-0000-0000-000000000000', 'Skincare Unboxing', '1 unboxing reel + 5 story frames.', 'live', 12000),
+--   ('00000000-0000-0000-0000-000000000000', 'Cafe Collab', '2 in-store reels + 8 photos.', 'live', 10000),
+--   ('00000000-0000-0000-0000-000000000000', 'Tech Review', '1 long-form YouTube review.', 'live', 20000),
+--   ('00000000-0000-0000-0000-000000000000', 'Weekend Getaway', 'Reel + 4 story tiles from location stay.', 'live', 25000);

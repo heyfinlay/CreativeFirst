@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-sand-50 text-ink-900 antialiased;
+  font-family: var(--font-body), sans-serif;
+}
+
+.page-shell {
+  background: radial-gradient(circle at top, rgba(242, 226, 215, 0.7), transparent 55%),
+    radial-gradient(circle at 20% 20%, rgba(254, 233, 230, 0.8), transparent 50%),
+    linear-gradient(180deg, #fbf7f0 0%, #fff6f5 50%, #fbf7f0 100%);
+}
