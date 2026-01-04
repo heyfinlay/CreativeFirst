@@ -11,7 +11,7 @@ export default async function CreatorSavedPage() {
   const { data: saved } = await supabase
     .from("saved_contracts")
     .select(
-      "created_at, contracts ( id, title, description, min_value_cents )"
+      "created_at, contract:contracts ( id, title, description, min_value_cents )"
     )
     .eq("creator_user_id", user?.id ?? "")
     .order("created_at", { ascending: false });
@@ -32,22 +32,29 @@ export default async function CreatorSavedPage() {
 
       {saved && saved.length > 0 ? (
         <section className="grid gap-4">
-          {saved.map((row) => (
-            <article
-              key={row.contracts.id}
-              className="rounded-3xl border border-white/60 bg-white/80 p-6 text-sm text-ink-700 shadow-soft"
-            >
-              <h2 className="text-lg font-semibold text-ink-900">
-                {row.contracts.title}
-              </h2>
-              <p className="mt-2 text-sm text-ink-700">
-                {row.contracts.description}
-              </p>
-              <p className="mt-3 text-xs text-ink-700">
-                Minimum: {formatCurrency(row.contracts.min_value_cents)}
-              </p>
-            </article>
-          ))}
+          {saved.map((row) => {
+            const contract = Array.isArray(row.contract)
+              ? row.contract[0]
+              : row.contract;
+
+            return (
+              <article
+                key={contract?.id ?? row.created_at}
+                className="rounded-3xl border border-white/60 bg-white/80 p-6 text-sm text-ink-700 shadow-soft"
+              >
+                <h2 className="text-lg font-semibold text-ink-900">
+                  {contract?.title ?? "Contract unavailable"}
+                </h2>
+                <p className="mt-2 text-sm text-ink-700">
+                  {contract?.description ?? "This contract is no longer live."}
+                </p>
+                <p className="mt-3 text-xs text-ink-700">
+                  Minimum:{" "}
+                  {contract ? formatCurrency(contract.min_value_cents) : "—"}
+                </p>
+              </article>
+            );
+          })}
         </section>
       ) : (
         <section className="rounded-3xl border border-white/60 bg-white/80 p-6 text-sm text-ink-700 shadow-soft">

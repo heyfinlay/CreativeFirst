@@ -11,7 +11,7 @@ export default async function CreatorApplicationsPage() {
   const { data: applications } = await supabase
     .from("applications")
     .select(
-      "id, status, created_at, contracts ( id, title, description, min_value_cents )"
+      "id, status, created_at, contract:contracts ( id, title, description, min_value_cents )"
     )
     .eq("creator_user_id", user?.id ?? "")
     .order("created_at", { ascending: false });
@@ -32,29 +32,38 @@ export default async function CreatorApplicationsPage() {
 
       {applications && applications.length > 0 ? (
         <section className="grid gap-4">
-          {applications.map((row) => (
-            <article
-              key={row.id}
-              className="rounded-3xl border border-white/60 bg-white/80 p-6 text-sm text-ink-700 shadow-soft"
-            >
-              <div className="flex flex-wrap items-center justify-between gap-3">
-                <div>
-                  <h2 className="text-lg font-semibold text-ink-900">
-                    {row.contracts.title}
-                  </h2>
-                  <p className="text-xs uppercase tracking-[0.2em] text-ink-700">
-                    {row.status.replace(/_/g, " ")}
+          {applications.map((row) => {
+            const contract = Array.isArray(row.contract)
+              ? row.contract[0]
+              : row.contract;
+
+            return (
+              <article
+                key={row.id}
+                className="rounded-3xl border border-white/60 bg-white/80 p-6 text-sm text-ink-700 shadow-soft"
+              >
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div>
+                    <h2 className="text-lg font-semibold text-ink-900">
+                      {contract?.title ?? "Contract unavailable"}
+                    </h2>
+                    <p className="text-xs uppercase tracking-[0.2em] text-ink-700">
+                      {row.status.replace(/_/g, " ")}
+                    </p>
+                  </div>
+                  <p className="text-xs text-ink-700">
+                    Minimum:{" "}
+                    {contract
+                      ? formatCurrency(contract.min_value_cents)
+                      : "—"}
                   </p>
                 </div>
-                <p className="text-xs text-ink-700">
-                  Minimum: {formatCurrency(row.contracts.min_value_cents)}
+                <p className="mt-2 text-sm text-ink-700">
+                  {contract?.description ?? "This contract is no longer live."}
                 </p>
-              </div>
-              <p className="mt-2 text-sm text-ink-700">
-                {row.contracts.description}
-              </p>
-            </article>
-          ))}
+              </article>
+            );
+          })}
         </section>
       ) : (
         <section className="rounded-3xl border border-white/60 bg-white/80 p-6 text-sm text-ink-700 shadow-soft">

@@ -159,7 +159,7 @@ export default function NewContractPage() {
         </label>
         <p className="text-xs text-ink-700">
           TODO: posting fee and payment gate (Stripe) should move live contracts
-          into a \"live_requires_payment\" hold until paid.
+          into a &quot;live_requires_payment&quot; hold until paid.
         </p>
         <button
           type="submit"
