@@ -47,6 +47,17 @@ export default async function ContractDetailPage({ params }: ContractPageProps) 
     notFound();
   }
 
+  type ApplicationRow = {
+    id: string;
+    pitch: string | null;
+    status: string;
+    creator_user_id: string;
+    profiles:
+      | { display_name: string | null }
+      | { display_name: string | null }[]
+      | null;
+  };
+
   const { data: applications } = await supabase
     .from("applications")
     .select(
@@ -54,6 +65,8 @@ export default async function ContractDetailPage({ params }: ContractPageProps) 
     )
     .eq("contract_id", params.id)
     .order("created_at", { ascending: false });
+
+  const typedApplications = applications as ApplicationRow[] | null;
 
   return (
     <main className="mx-auto flex w-full max-w-4xl flex-col gap-8">
@@ -89,17 +102,22 @@ export default async function ContractDetailPage({ params }: ContractPageProps) 
         <p className="mt-2 text-sm text-ink-700">
           Review pitches and approve creators to bid.
         </p>
-        {applications && applications.length > 0 ? (
+        {typedApplications && typedApplications.length > 0 ? (
           <div className="mt-4 flex flex-col gap-4">
-            {applications.map((app) => (
-              <div
-                key={app.id}
-                className="rounded-2xl border border-ink-900/10 bg-white/90 p-4"
-              >
+            {typedApplications.map((app) => {
+              const displayName = Array.isArray(app.profiles)
+                ? app.profiles[0]?.display_name
+                : app.profiles?.display_name;
+
+              return (
+                <div
+                  key={app.id}
+                  className="rounded-2xl border border-ink-900/10 bg-white/90 p-4"
+                >
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
                     <p className="text-sm font-semibold text-ink-900">
-                      {app.profiles?.display_name ?? app.creator_user_id}
+                      {displayName ?? app.creator_user_id}
                     </p>
                     <p className="text-xs uppercase tracking-[0.2em] text-ink-700">
                       {app.status.replace(/_/g, " ")}
@@ -126,8 +144,9 @@ export default async function ContractDetailPage({ params }: ContractPageProps) 
                   </form>
                 </div>
                 <p className="mt-3 text-sm text-ink-700">{app.pitch}</p>
-              </div>
-            ))}
+                </div>
+              );
+            })}
           </div>
         ) : (
           <p className="mt-4 text-sm text-ink-700">

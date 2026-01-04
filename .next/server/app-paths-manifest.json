@@ -1,7 +1,15 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/onboarding/role/page": "app/onboarding/role/page.js",
+  "/page": "app/page.js",
   "/signup/page": "app/signup/page.js",
   "/login/page": "app/login/page.js",
-  "/page": "app/page.js"
+  "/brand/contracts/new/page": "app/brand/contracts/new/page.js",
+  "/brand/contracts/[id]/page": "app/brand/contracts/[id]/page.js",
+  "/creator/applications/page": "app/creator/applications/page.js",
+  "/brand/page": "app/brand/page.js",
+  "/creator/saved/page": "app/creator/saved/page.js",
+  "/creator/page": "app/creator/page.js",
+  "/creator/contracts/page": "app/creator/contracts/page.js",
+  "/brand/contracts/page": "app/brand/contracts/page.js"
 }

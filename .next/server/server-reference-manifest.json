@@ -1,5 +1,1 @@
-{
-  "node": {},
-  "edge": {},
-  "encryptionKey": "hFqqdViHtqSvg6Cx4Ndo9zrPQDAqovlnOLimxdYKqhQ="
-}
+{"node":{"9907e6c55ea0f00f1524f05e64db3887d2d9bf5e":{"workers":{"app/brand/contracts/new/page":"2543"},"layer":{"app/brand/contracts/new/page":"rsc"}},"b499632055126edfea2c9a0e01a8b203b6258650":{"workers":{"app/brand/contracts/[id]/page":"9157"},"layer":{"app/brand/contracts/[id]/page":"rsc"}}},"edge":{},"encryptionKey":"zRHlaLfItvOLXSlnayzkBdYG04T/Q/6z1lDqUqfMPF8="}
