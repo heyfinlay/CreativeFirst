@@ -187,4 +187,10 @@ This document is the **single source of truth for build progress**. It exists to
 
 ---
 
+## Maintenance Log
+
+* 2025-01-04: Cleaned tracked `.next` build artifacts and refreshed `npm install` to address Vercel install failures.
+
+---
+
 *Last updated: manually*
