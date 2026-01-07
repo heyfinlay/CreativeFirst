@@ -34,6 +34,36 @@ export default async function ContractDetailPage({ params }: ContractPageProps) 
     revalidatePath(`/brand/contracts/${params.id}`);
   }
 
+  async function acceptBid(formData: FormData) {
+    "use server";
+
+    const bidId = String(formData.get("bid_id") ?? "");
+    if (!bidId) {
+      return;
+    }
+
+    const serverSupabase = createServerSupabaseClient();
+    await serverSupabase.rpc("bidding_accept_bid", { bid_id: bidId });
+
+    revalidatePath(`/brand/contracts/${params.id}`);
+  }
+
+  async function rejectBid(formData: FormData) {
+    "use server";
+
+    const bidId = String(formData.get("bid_id") ?? "");
+    if (!bidId) {
+      return;
+    }
+
+    const serverSupabase = createServerSupabaseClient();
+    await serverSupabase.rpc("bidding_reject_bid", { bid_id: bidId });
+
+    revalidatePath(`/brand/contracts/${params.id}`);
+  }
+
+  await supabase.rpc("bidding_reject_expired_bids");
+
   const { data: contract } = await supabase
     .from("contracts")
     .select(
@@ -58,6 +88,16 @@ export default async function ContractDetailPage({ params }: ContractPageProps) 
       | null;
   };
 
+  type BidRow = {
+    id: string;
+    application_id: string;
+    amount_cents: number;
+    message: string | null;
+    status: string;
+    expires_at: string;
+    created_at: string;
+  };
+
   const { data: applications } = await supabase
     .from("applications")
     .select(
@@ -66,7 +106,21 @@ export default async function ContractDetailPage({ params }: ContractPageProps) 
     .eq("contract_id", params.id)
     .order("created_at", { ascending: false });
 
+  const { data: bids } = await supabase
+    .from("bids")
+    .select("id, application_id, amount_cents, message, status, expires_at, created_at")
+    .eq("contract_id", params.id)
+    .order("created_at", { ascending: false });
+
   const typedApplications = applications as ApplicationRow[] | null;
+  const typedBids = bids as BidRow[] | null;
+  const bidsByApplication = new Map<string, BidRow[]>();
+
+  typedBids?.forEach((bid) => {
+    const existing = bidsByApplication.get(bid.application_id) ?? [];
+    existing.push(bid);
+    bidsByApplication.set(bid.application_id, existing);
+  });
 
   return (
     <main className="mx-auto flex w-full max-w-4xl flex-col gap-8">
@@ -108,6 +162,7 @@ export default async function ContractDetailPage({ params }: ContractPageProps) 
               const displayName = Array.isArray(app.profiles)
                 ? app.profiles[0]?.display_name
                 : app.profiles?.display_name;
+              const appBids = bidsByApplication.get(app.id) ?? [];
 
               return (
                 <div
@@ -144,6 +199,69 @@ export default async function ContractDetailPage({ params }: ContractPageProps) 
                   </form>
                 </div>
                 <p className="mt-3 text-sm text-ink-700">{app.pitch}</p>
+                <div className="mt-4 grid gap-3">
+                  {appBids.length > 0 ? (
+                    appBids.map((bid) => {
+                      const expired =
+                        bid.status === "expired" ||
+                        new Date(bid.expires_at) < new Date();
+
+                      return (
+                        <div
+                          key={bid.id}
+                          className="rounded-2xl border border-ink-900/10 bg-white/80 p-4"
+                        >
+                          <div className="flex flex-wrap items-center justify-between gap-2">
+                            <p className="text-sm font-semibold text-ink-900">
+                              {formatCurrency(bid.amount_cents)}
+                            </p>
+                            <span className="text-xs uppercase tracking-[0.2em] text-ink-700">
+                              {expired ? "expired" : bid.status.replace(/_/g, " ")}
+                            </span>
+                          </div>
+                          {bid.message ? (
+                            <p className="mt-2 text-sm text-ink-700">
+                              {bid.message}
+                            </p>
+                          ) : null}
+                          <p className="mt-2 text-xs text-ink-700">
+                            Expires at{" "}
+                            {new Date(bid.expires_at).toLocaleString("en-AU", {
+                              dateStyle: "medium",
+                              timeStyle: "short",
+                            })}
+                          </p>
+                          <div className="mt-3 flex flex-wrap gap-2">
+                            {bid.status === "submitted" && !expired ? (
+                              <form action={acceptBid}>
+                                <input type="hidden" name="bid_id" value={bid.id} />
+                                <button
+                                  type="submit"
+                                  className="rounded-full border border-ink-900/20 bg-white px-3 py-1.5 text-xs font-semibold text-ink-900"
+                                >
+                                  Accept
+                                </button>
+                              </form>
+                            ) : null}
+                            {bid.status === "submitted" && !expired ? (
+                              <form action={rejectBid}>
+                                <input type="hidden" name="bid_id" value={bid.id} />
+                                <button
+                                  type="submit"
+                                  className="rounded-full border border-ink-900/20 bg-white px-3 py-1.5 text-xs font-semibold text-ink-900"
+                                >
+                                  Reject
+                                </button>
+                              </form>
+                            ) : null}
+                          </div>
+                        </div>
+                      );
+                    })
+                  ) : (
+                    <p className="text-xs text-ink-700">No bids yet.</p>
+                  )}
+                </div>
                 </div>
               );
             })}

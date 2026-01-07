@@ -61,6 +61,14 @@ export default async function CreatorApplicationsPage() {
                 <p className="mt-2 text-sm text-ink-700">
                   {contract?.description ?? "This contract is no longer live."}
                 </p>
+                <div className="mt-4 flex justify-end">
+                  <Link
+                    className="text-xs font-semibold uppercase tracking-[0.2em] text-ink-700"
+                    href={`/creator/applications/${row.id}`}
+                  >
+                    Open
+                  </Link>
+                </div>
               </article>
             );
           })}

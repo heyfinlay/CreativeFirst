@@ -105,12 +105,12 @@ This document is the **single source of truth for build progress**. It exists to
 
 **Goal:** Brands approve applicants to bid; creators submit bids with expiry.
 
-* ⬜ `bids` table + status enum
-* ⬜ Bid expiry enforcement (72h)
-* ⬜ Bid submission UI (creator)
-* ⬜ Bid review + accept UI (brand)
+* ✅ `bids` table + status enum
+* ✅ Bid expiry enforcement (72h)
+* ✅ Bid submission UI (creator)
+* ✅ Bid review + accept UI (brand)
 
-**Milestone 4 Status:** ⬜ Not started
+**Milestone 4 Status:** ✅ Completed
 
 ---
 
@@ -191,6 +191,8 @@ This document is the **single source of truth for build progress**. It exists to
 
 * 2025-01-04: Cleaned tracked `.next` build artifacts and refreshed `npm install` to address Vercel install failures.
 * 2025-01-04: Fixed Supabase relation shape handling for creator views and resolved build lint errors.
+* 2026-01-07: Added bids schema, RPCs, and creator/brand bid flows with expiry enforcement.
+* 2026-01-07: Fixed webpack runtime mismatch error on login.
 
 ---
 
