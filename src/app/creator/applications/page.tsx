@@ -1,19 +1,20 @@
 import Link from "next/link";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { formatCurrency } from "@/lib/format";
+import { requireRole } from "@/lib/auth/requireRole";
+
+export const dynamic = "force-dynamic";
 
 export default async function CreatorApplicationsPage() {
+  const { user } = await requireRole("creator");
   const supabase = createServerSupabaseClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
 
   const { data: applications } = await supabase
     .from("applications")
     .select(
       "id, status, created_at, contract:contracts ( id, title, description, min_value_cents )"
     )
-    .eq("creator_user_id", user?.id ?? "")
+    .eq("creator_user_id", user.id)
     .order("created_at", { ascending: false });
 
   return (

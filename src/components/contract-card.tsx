@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { createBrowserSupabaseClient } from "@/lib/supabase/browser";
+import { createBrowserSupabaseClient } from "@/lib/supabase/client";
 import { formatCurrency } from "@/lib/format";
 
 type ContractCardProps = {
@@ -29,6 +29,7 @@ export default function ContractCard({
   const router = useRouter();
   const [saved, setSaved] = useState(initiallySaved);
   const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
   const [showApply, setShowApply] = useState(false);
   const [pitch, setPitch] = useState("");
   const [applying, setApplying] = useState(false);
@@ -39,10 +40,21 @@ export default function ContractCard({
 
   const toggleSave = async () => {
     setSaving(true);
+    setSaveError(null);
     const supabase = createBrowserSupabaseClient();
 
     if (saved) {
-      await supabase.from("saved_contracts").delete().eq("contract_id", id);
+      const { error } = await supabase
+        .from("saved_contracts")
+        .delete()
+        .eq("contract_id", id);
+
+      if (error) {
+        setSaveError(error.message);
+        setSaving(false);
+        return;
+      }
+
       setSaved(false);
       setSaving(false);
       router.refresh();
@@ -53,10 +65,14 @@ export default function ContractCard({
       .from("saved_contracts")
       .insert({ contract_id: id });
 
-    if (!error) {
-      setSaved(true);
-      router.refresh();
+    if (error) {
+      setSaveError(error.message);
+      setSaving(false);
+      return;
     }
+
+    setSaved(true);
+    router.refresh();
 
     setSaving(false);
   };
@@ -126,6 +142,9 @@ export default function ContractCard({
           </span>
         ) : null}
       </div>
+      {saveError ? (
+        <p className="text-xs text-red-600">{saveError}</p>
+      ) : null}
       {showApply && !applicationStatus ? (
         <div className="flex flex-col gap-3 rounded-2xl border border-ink-900/10 bg-white/90 p-4">
           <label className="flex flex-col gap-2 text-xs text-ink-700">

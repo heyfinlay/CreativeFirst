@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { createBrowserSupabaseClient } from "@/lib/supabase/browser";
+import { createBrowserSupabaseClient } from "@/lib/supabase/client";
 
 type Role = "creator" | "brand";
 
@@ -10,6 +10,9 @@ export default function RoleSelector() {
   const router = useRouter();
   const [role, setRole] = useState<Role>("creator");
   const [displayName, setDisplayName] = useState("");
+  const [businessName, setBusinessName] = useState("");
+  const [website, setWebsite] = useState("");
+  const [businessEmail, setBusinessEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -28,6 +31,14 @@ export default function RoleSelector() {
       return;
     }
 
+    if (role === "brand") {
+      if (!businessName.trim() || !website.trim() || !businessEmail.trim()) {
+        setError("Add business name, website, and email to continue.");
+        setLoading(false);
+        return;
+      }
+    }
+
     const { error: upsertError } = await supabase.from("profiles").upsert(
       {
         user_id: user.id,
@@ -41,6 +52,24 @@ export default function RoleSelector() {
       setError(upsertError.message);
       setLoading(false);
       return;
+    }
+
+    if (role === "brand") {
+      const { error: brandError } = await supabase.from("brands").upsert(
+        {
+          user_id: user.id,
+          business_name: businessName.trim(),
+          website: website.trim(),
+          business_email: businessEmail.trim(),
+        },
+        { onConflict: "user_id" }
+      );
+
+      if (brandError) {
+        setError(brandError.message);
+        setLoading(false);
+        return;
+      }
     }
 
     router.replace(role === "creator" ? "/creator" : "/brand");
@@ -70,6 +99,40 @@ export default function RoleSelector() {
           className="rounded-2xl border border-ink-900/10 bg-white px-4 py-3 text-ink-900"
         />
       </label>
+      {role === "brand" ? (
+        <>
+          <label className="flex flex-col gap-2 text-sm text-ink-700">
+            Business name
+            <input
+              type="text"
+              value={businessName}
+              onChange={(event) => setBusinessName(event.target.value)}
+              placeholder="Brand Studio"
+              className="rounded-2xl border border-ink-900/10 bg-white px-4 py-3 text-ink-900"
+            />
+          </label>
+          <label className="flex flex-col gap-2 text-sm text-ink-700">
+            Website
+            <input
+              type="url"
+              value={website}
+              onChange={(event) => setWebsite(event.target.value)}
+              placeholder="https://"
+              className="rounded-2xl border border-ink-900/10 bg-white px-4 py-3 text-ink-900"
+            />
+          </label>
+          <label className="flex flex-col gap-2 text-sm text-ink-700">
+            Business email
+            <input
+              type="email"
+              value={businessEmail}
+              onChange={(event) => setBusinessEmail(event.target.value)}
+              placeholder="hello@brand.com"
+              className="rounded-2xl border border-ink-900/10 bg-white px-4 py-3 text-ink-900"
+            />
+          </label>
+        </>
+      ) : null}
       <div className="grid gap-3 sm:grid-cols-2">
         {["creator", "brand"].map((option) => (
           <button

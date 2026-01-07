@@ -1,8 +1,17 @@
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
+import { requireRole } from "@/lib/auth/requireRole";
 
-export default function NewContractPage() {
+export const dynamic = "force-dynamic";
+
+export default async function NewContractPage({
+  searchParams,
+}: {
+  searchParams?: { error?: string };
+}) {
+  await requireRole("brand");
+
   async function createContract(formData: FormData) {
     "use server";
 
@@ -13,6 +22,18 @@ export default function NewContractPage() {
 
     if (!user) {
       redirect("/login");
+    }
+
+    const { data: brand } = await supabase
+      .from("brands")
+      .select("user_id")
+      .eq("user_id", user.id)
+      .maybeSingle();
+
+    if (!brand) {
+      redirect(
+        "/brand/contracts/new?error=Missing%20brand%20profile.%20Complete%20onboarding%20details."
+      );
     }
 
     const title = String(formData.get("title") ?? "").trim();
@@ -40,7 +61,7 @@ export default function NewContractPage() {
       ? status
       : "draft";
 
-    await supabase.from("contracts").insert({
+    const { error } = await supabase.from("contracts").insert({
       brand_user_id: user.id,
       title,
       description,
@@ -54,9 +75,18 @@ export default function NewContractPage() {
       shipping_required: shippingRequired,
     });
 
+    if (error) {
+      console.error("Contract insert failed:", error.message);
+      redirect(
+        `/brand/contracts/new?error=${encodeURIComponent(error.message)}`
+      );
+    }
+
     revalidatePath("/brand/contracts");
-    redirect("/brand/contracts");
+    redirect("/brand/contracts?created=1");
   }
+
+  const errorMessage = searchParams?.error;
 
   return (
     <main className="mx-auto flex w-full max-w-4xl flex-col gap-8">
@@ -71,6 +101,11 @@ export default function NewContractPage() {
         action={createContract}
         className="flex flex-col gap-6 rounded-3xl border border-white/60 bg-white/80 p-8 shadow-soft"
       >
+        {errorMessage ? (
+          <p className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+            {errorMessage}
+          </p>
+        ) : null}
         <label className="flex flex-col gap-2 text-sm text-ink-700">
           Title
           <input

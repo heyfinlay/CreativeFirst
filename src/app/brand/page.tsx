@@ -1,6 +1,11 @@
 import Link from "next/link";
+import { requireRole } from "@/lib/auth/requireRole";
 
-export default function BrandDashboard() {
+export const dynamic = "force-dynamic";
+
+export default async function BrandDashboard() {
+  await requireRole("brand");
+
   return (
     <main className="mx-auto flex w-full max-w-5xl flex-col gap-8">
       <header className="flex flex-col gap-3">

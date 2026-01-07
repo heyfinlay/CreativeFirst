@@ -1,18 +1,26 @@
 import Link from "next/link";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { formatCurrency } from "@/lib/format";
+import { requireRole } from "@/lib/auth/requireRole";
 
-export default async function BrandContractsPage() {
+export const dynamic = "force-dynamic";
+
+export default async function BrandContractsPage({
+  searchParams,
+}: {
+  searchParams?: { created?: string };
+}) {
+  const { user } = await requireRole("brand");
   const supabase = createServerSupabaseClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
 
   const { data: contracts } = await supabase
     .from("contracts")
     .select("id, title, status, min_value_cents, created_at")
     .eq("brand_user_id", user?.id ?? "")
     .order("created_at", { ascending: false });
+
+  const createdMessage =
+    searchParams?.created === "1" ? "Contract saved." : null;
 
   return (
     <main className="mx-auto flex w-full max-w-5xl flex-col gap-8">
@@ -30,6 +38,12 @@ export default async function BrandContractsPage() {
           New contract
         </Link>
       </header>
+
+      {createdMessage ? (
+        <section className="rounded-3xl border border-white/60 bg-white/80 p-4 text-sm text-ink-700 shadow-soft">
+          {createdMessage}
+        </section>
+      ) : null}
 
       {contracts && contracts.length > 0 ? (
         <section className="grid gap-4">

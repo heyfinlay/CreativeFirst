@@ -1,12 +1,13 @@
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import ContractCard from "@/components/contract-card";
+import { requireRole } from "@/lib/auth/requireRole";
+
+export const dynamic = "force-dynamic";
 
 export default async function CreatorContractsPage() {
+  const { user } = await requireRole("creator");
   const supabase = createServerSupabaseClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-  const userId = user?.id ?? "";
+  const userId = user.id;
 
   const { data: contracts } = await supabase
     .from("contracts")

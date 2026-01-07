@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { createBrowserSupabaseClient } from "@/lib/supabase/browser";
+import { createBrowserSupabaseClient } from "@/lib/supabase/client";
 
 type AuthMode = "login" | "signup";
 
@@ -30,6 +30,19 @@ export default function AuthForm({ mode }: { mode: AuthMode }) {
       .select("role")
       .eq("user_id", user.id)
       .maybeSingle();
+
+    if (!profile) {
+      const { error: profileError } = await supabase.from("profiles").insert({
+        user_id: user.id,
+        role: null,
+        display_name: null,
+      });
+
+      if (profileError) {
+        setError(profileError.message);
+        return;
+      }
+    }
 
     if (!profile?.role) {
       router.replace("/onboarding/role");

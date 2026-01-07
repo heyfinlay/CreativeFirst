@@ -4,6 +4,8 @@
 
 :root {
   color-scheme: light;
+  --font-body: "Manrope", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Fraunces", "Georgia", serif;
 }
 
 body {

@@ -193,6 +193,7 @@ This document is the **single source of truth for build progress**. It exists to
 * 2025-01-04: Fixed Supabase relation shape handling for creator views and resolved build lint errors.
 * 2026-01-07: Added bids schema, RPCs, and creator/brand bid flows with expiry enforcement.
 * 2026-01-07: Fixed webpack runtime mismatch error on login.
+* 2026-01-07: Added dynamic flags for auth-bound routes, standardized Supabase clients, tightened role/profile guards, and surfaced contract publish errors.
 
 ---
 

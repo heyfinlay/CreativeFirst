@@ -1,5 +1,5 @@
 import DashboardNav from "@/components/dashboard-nav";
-import { requireRole } from "@/lib/auth";
+import { requireRole } from "@/lib/auth/requireRole";
 
 export default async function BrandLayout({
   children,

@@ -1,18 +1,23 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { formatCurrency } from "@/lib/format";
+import { requireRole } from "@/lib/auth/requireRole";
 
 interface ContractPageProps {
   params: { id: string };
+  searchParams?: { error?: string };
 }
 
-export default async function ContractDetailPage({ params }: ContractPageProps) {
+export const dynamic = "force-dynamic";
+
+export default async function ContractDetailPage({
+  params,
+  searchParams,
+}: ContractPageProps) {
+  const { user } = await requireRole("brand");
   const supabase = createServerSupabaseClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
 
   async function updateApplicationStatus(formData: FormData) {
     "use server";
@@ -26,10 +31,19 @@ export default async function ContractDetailPage({ params }: ContractPageProps) 
     }
 
     const serverSupabase = createServerSupabaseClient();
-    await serverSupabase
+    const { error } = await serverSupabase
       .from("applications")
       .update({ status: nextStatus })
       .eq("id", applicationId);
+
+    if (error) {
+      console.error("Application update failed:", error.message);
+      redirect(
+        `/brand/contracts/${params.id}?error=${encodeURIComponent(
+          error.message
+        )}`
+      );
+    }
 
     revalidatePath(`/brand/contracts/${params.id}`);
   }
@@ -43,7 +57,18 @@ export default async function ContractDetailPage({ params }: ContractPageProps) 
     }
 
     const serverSupabase = createServerSupabaseClient();
-    await serverSupabase.rpc("bidding_accept_bid", { bid_id: bidId });
+    const { error } = await serverSupabase.rpc("bidding_accept_bid", {
+      bid_id: bidId,
+    });
+
+    if (error) {
+      console.error("Bid accept failed:", error.message);
+      redirect(
+        `/brand/contracts/${params.id}?error=${encodeURIComponent(
+          error.message
+        )}`
+      );
+    }
 
     revalidatePath(`/brand/contracts/${params.id}`);
   }
@@ -57,7 +82,18 @@ export default async function ContractDetailPage({ params }: ContractPageProps) 
     }
 
     const serverSupabase = createServerSupabaseClient();
-    await serverSupabase.rpc("bidding_reject_bid", { bid_id: bidId });
+    const { error } = await serverSupabase.rpc("bidding_reject_bid", {
+      bid_id: bidId,
+    });
+
+    if (error) {
+      console.error("Bid reject failed:", error.message);
+      redirect(
+        `/brand/contracts/${params.id}?error=${encodeURIComponent(
+          error.message
+        )}`
+      );
+    }
 
     revalidatePath(`/brand/contracts/${params.id}`);
   }
@@ -70,7 +106,7 @@ export default async function ContractDetailPage({ params }: ContractPageProps) 
       "id, title, description, status, min_value_cents, deliverable_type, niche_tags, platforms, included_revisions, requires_post_url, shipping_required"
     )
     .eq("id", params.id)
-    .eq("brand_user_id", user?.id ?? "")
+    .eq("brand_user_id", user.id)
     .maybeSingle();
 
   if (!contract) {
@@ -134,6 +170,12 @@ export default async function ContractDetailPage({ params }: ContractPageProps) 
         <h1 className="font-display text-3xl text-ink-900">{contract.title}</h1>
         <p className="text-sm text-ink-700">{contract.description}</p>
       </header>
+
+      {searchParams?.error ? (
+        <section className="rounded-3xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">
+          {searchParams.error}
+        </section>
+      ) : null}
 
       <section className="grid gap-4 rounded-3xl border border-white/60 bg-white/80 p-6 text-sm text-ink-700 shadow-soft">
         <div className="grid gap-2 md:grid-cols-2">

@@ -2,6 +2,8 @@ import { redirect } from "next/navigation";
 import RoleSelector from "@/components/role-selector";
 import { getUserAndProfile } from "@/lib/auth";
 
+export const dynamic = "force-dynamic";
+
 export default async function RoleOnboardingPage() {
   const { user, profile } = await getUserAndProfile();
 

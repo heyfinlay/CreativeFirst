@@ -1,13 +1,17 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import BidCountdown from "@/components/bid-countdown";
 import { formatCurrency } from "@/lib/format";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
+import { requireRole } from "@/lib/auth/requireRole";
 
 interface ApplicationDetailPageProps {
   params: { id: string };
+  searchParams?: { error?: string };
 }
+
+export const dynamic = "force-dynamic";
 
 function parseAmountToCents(raw: string) {
   const cleaned = raw.replace(/,/g, "").trim();
@@ -32,11 +36,10 @@ function parseAmountToCents(raw: string) {
 
 export default async function ApplicationDetailPage({
   params,
+  searchParams,
 }: ApplicationDetailPageProps) {
+  const { user } = await requireRole("creator");
   const supabase = createServerSupabaseClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
 
   await supabase.rpc("bidding_reject_expired_bids");
 
@@ -46,7 +49,7 @@ export default async function ApplicationDetailPage({
       "id, status, pitch, created_at, contract:contracts ( id, title, description, min_value_cents )"
     )
     .eq("id", params.id)
-    .eq("creator_user_id", user?.id ?? "")
+    .eq("creator_user_id", user.id)
     .maybeSingle();
 
   if (!application) {
@@ -77,11 +80,20 @@ export default async function ApplicationDetailPage({
     }
 
     const serverSupabase = createServerSupabaseClient();
-    await serverSupabase.rpc("bidding_submit_bid", {
+    const { error } = await serverSupabase.rpc("bidding_submit_bid", {
       application_id: params.id,
       amount_cents: amountCents,
       message: message.length ? message : null,
     });
+
+    if (error) {
+      console.error("Bid submission failed:", error.message);
+      redirect(
+        `/creator/applications/${params.id}?error=${encodeURIComponent(
+          error.message
+        )}`
+      );
+    }
 
     revalidatePath(`/creator/applications/${params.id}`);
   }
@@ -143,6 +155,11 @@ export default async function ApplicationDetailPage({
           </div>
         ) : application.status === "approved_to_bid" ? (
           <form action={submitBid} className="grid gap-4">
+            {searchParams?.error ? (
+              <p className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+                {searchParams.error}
+              </p>
+            ) : null}
             <div className="grid gap-2">
               <label className="text-xs uppercase tracking-[0.2em] text-ink-700">
                 Amount (AUD)
