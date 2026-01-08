@@ -4,14 +4,14 @@ import { createServerSupabaseClient } from "@/lib/supabase/server";
 
 const navConfig = {
   creator: [
-    { href: "/creator", label: "Home" },
-    { href: "/creator/contracts", label: "Contracts" },
-    { href: "/creator/saved", label: "Saved" },
-    { href: "/creator/applications", label: "Applications" },
+    { href: "/app/creator", label: "Home" },
+    { href: "/app/creator/contracts", label: "Contracts" },
+    { href: "/app/creator/saved", label: "Saved" },
+    { href: "/app/creator/applications", label: "Applications" },
   ],
   brand: [
-    { href: "/brand", label: "Home" },
-    { href: "/brand/contracts", label: "Contracts" },
+    { href: "/app/brand", label: "Home" },
+    { href: "/app/brand/contracts", label: "Contracts" },
   ],
 };
 

@@ -45,11 +45,11 @@ export default function AuthForm({ mode }: { mode: AuthMode }) {
     }
 
     if (!profile?.role) {
-      router.replace("/onboarding/role");
+      router.replace("/app/onboarding");
       return;
     }
 
-    router.replace(profile.role === "creator" ? "/creator" : "/brand");
+    router.replace(profile.role === "creator" ? "/app/creator" : "/app/brand");
   };
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {

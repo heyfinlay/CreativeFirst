@@ -72,7 +72,7 @@ export default function RoleSelector() {
       }
     }
 
-    router.replace(role === "creator" ? "/creator" : "/brand");
+    router.replace(role === "creator" ? "/app/creator" : "/app/brand");
     router.refresh();
   };
 

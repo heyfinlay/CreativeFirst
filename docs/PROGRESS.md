@@ -40,12 +40,11 @@ This document is the **single source of truth for build progress**. It exists to
 * ✅ Supabase Auth configured
 * ✅ `profiles` table created with RLS
 * ✅ Role enum (`creator | brand | admin`) enforced
-* ✅ Role onboarding flow (`/onboarding/role`)
-* ⛔ Auth helper bug discovered (`createBrowserClient` import)
-* 🟡 Auth helper fix applied / pending verification
-* 🟡 End-to-end signup + login verification
+* ✅ Role onboarding flow (`/app/onboarding`)
+* ✅ Dashboard + settings system implemented for role-based flows
+* 🟡 End-to-end signup + login verification (manual validation pending)
 
-**Milestone 1 Status:** 🟡 In progress (blocked until auth verification passes)
+**Milestone 1 Status:** 🟡 In progress (awaiting manual verification)
 
 ---
 
@@ -194,6 +193,7 @@ This document is the **single source of truth for build progress**. It exists to
 * 2026-01-07: Added bids schema, RPCs, and creator/brand bid flows with expiry enforcement.
 * 2026-01-07: Fixed webpack runtime mismatch error on login.
 * 2026-01-07: Added dynamic flags for auth-bound routes, standardized Supabase clients, tightened role/profile guards, and surfaced contract publish errors.
+* 2026-01-08: Added /app dashboard shell, onboarding/settings flows, and legacy route redirects for auth clarity.
 
 ---
 
