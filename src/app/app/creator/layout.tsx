@@ -27,6 +27,7 @@ export default async function CreatorAppLayout({
     { href: "/app/creator/contracts", label: "Browse Contracts" },
     { href: "/app/creator/saved", label: "Saved" },
     { href: "/app/creator/applications", label: "Applications" },
+    { href: "/app/creator/profile", label: "Public Profile" },
     { href: "/app/creator/settings", label: "Settings" },
   ];
 

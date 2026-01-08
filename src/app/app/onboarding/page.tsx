@@ -4,6 +4,7 @@ import {
   ensureProfile,
   requireUser,
 } from "@/lib/auth/guards";
+import { ensureCreatorPublicProfile } from "@/lib/creator-public-profiles";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 
 export const dynamic = "force-dynamic";
@@ -71,6 +72,27 @@ export default async function AppOnboardingPage({
       );
       if (brandError) {
         return { ok: false, message: brandError };
+      }
+    }
+
+    if (role === "creator") {
+      const { profile: latestProfile, error: profileError } =
+        await ensureProfile(actionUser.id);
+      if (profileError || !latestProfile) {
+        return { ok: false, message: profileError ?? "Profile error." };
+      }
+
+      try {
+        await ensureCreatorPublicProfile({
+          supabase: serverSupabase,
+          userId: actionUser.id,
+          email: actionUser.email,
+          displayName: latestProfile.display_name,
+        });
+      } catch (profileError) {
+        const message =
+          profileError instanceof Error ? profileError.message : "Profile error.";
+        return { ok: false, message };
       }
     }
 
