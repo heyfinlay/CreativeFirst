@@ -1,0 +1,1750 @@
+0 verbose cli /opt/homebrew/Cellar/node/24.10.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@11.6.0
+2 info using node@v24.10.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/finlaysturzaker/Desktop/CreatorFirst/.npmrc
+5 silly config load:file:/Users/finlaysturzaker/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install @radix-ui/react-slot @radix-ui/react-separator @radix-ui/react-dialog @radix-ui/react-tooltip @radix-ui/react-label @radix-ui/react-select @radix-ui/react-tabs @radix-ui/react-toggle @radix-ui/react-checkbox @radix-ui/react-dropdown-menu vaul @radix-ui/react-avatar sonner next-themes class-variance-authority lucide-react recharts@2.15.4 @radix-ui/react-toggle-group @dnd-kit/core @dnd-kit/modifiers @dnd-kit/sortable @dnd-kit/utilities @tanstack/react-table zod
+8 verbose argv "install" "@radix-ui/react-slot" "@radix-ui/react-separator" "@radix-ui/react-dialog" "@radix-ui/react-tooltip" "@radix-ui/react-label" "@radix-ui/react-select" "@radix-ui/react-tabs" "@radix-ui/react-toggle" "@radix-ui/react-checkbox" "@radix-ui/react-dropdown-menu" "vaul" "@radix-ui/react-avatar" "sonner" "next-themes" "class-variance-authority" "lucide-react" "recharts@2.15.4" "@radix-ui/react-toggle-group" "@dnd-kit/core" "@dnd-kit/modifiers" "@dnd-kit/sortable" "@dnd-kit/utilities" "@tanstack/react-table" "zod"
+9 verbose logfile logs-max:10 dir:/Users/finlaysturzaker/Desktop/CreatorFirst/.npm-cache/_logs/2026-01-09T05_31_20_089Z-
+10 verbose logfile /Users/finlaysturzaker/Desktop/CreatorFirst/.npm-cache/_logs/2026-01-09T05_31_20_089Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+13 silly idealTree buildDeps
+14 silly fetch manifest @radix-ui/react-slot@*
+15 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-slot cache-miss
+16 http cache https://registry.npmjs.org/@radix-ui%2freact-slot 47ms (cache hit)
+17 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-slot set size:387271 disposed:false
+18 silly fetch manifest @types/react@^18.3.3
+19 silly packumentCache full:https://registry.npmjs.org/@types%2freact cache-miss
+20 http cache https://registry.npmjs.org/@types%2freact 8ms (cache hit)
+21 silly packumentCache full:https://registry.npmjs.org/@types%2freact set size:2541992 disposed:false
+22 silly fetch manifest react@^18.3.1
+23 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+24 http cache https://registry.npmjs.org/react 15ms (cache hit)
+25 silly packumentCache full:https://registry.npmjs.org/react set size:6366570 disposed:false
+26 silly fetch manifest @radix-ui/react-separator@*
+27 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-separator cache-miss
+28 http cache https://registry.npmjs.org/@radix-ui%2freact-separator 12ms (cache hit)
+29 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-separator set size:589871 disposed:false
+30 silly fetch manifest @types/react-dom@^18.3.0
+31 silly packumentCache full:https://registry.npmjs.org/@types%2freact-dom cache-miss
+32 http cache https://registry.npmjs.org/@types%2freact-dom 2ms (cache hit)
+33 silly packumentCache full:https://registry.npmjs.org/@types%2freact-dom set size:429026 disposed:false
+34 silly fetch manifest react-dom@^18.3.1
+35 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+36 http cache https://registry.npmjs.org/react-dom 17ms (cache hit)
+37 silly packumentCache full:https://registry.npmjs.org/react-dom set size:8382055 disposed:false
+38 silly fetch manifest @radix-ui/react-dialog@*
+39 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-dialog cache-miss
+40 http cache https://registry.npmjs.org/@radix-ui%2freact-dialog 9ms (cache hit)
+41 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-dialog set size:1036325 disposed:false
+42 silly fetch manifest @radix-ui/react-tooltip@*
+43 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-tooltip cache-miss
+44 http cache https://registry.npmjs.org/@radix-ui%2freact-tooltip 7ms (cache hit)
+45 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-tooltip set size:1098971 disposed:false
+46 silly fetch manifest @radix-ui/react-label@*
+47 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-label cache-miss
+48 http cache https://registry.npmjs.org/@radix-ui%2freact-label 4ms (cache hit)
+49 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-label set size:622756 disposed:false
+50 silly fetch manifest @radix-ui/react-select@*
+51 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-select cache-miss
+52 http cache https://registry.npmjs.org/@radix-ui%2freact-select 5ms (cache hit)
+53 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-select set size:940573 disposed:false
+54 silly fetch manifest @radix-ui/react-tabs@*
+55 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-tabs cache-miss
+56 http cache https://registry.npmjs.org/@radix-ui%2freact-tabs 5ms (cache hit)
+57 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-tabs set size:855865 disposed:false
+58 silly fetch manifest @radix-ui/react-toggle@*
+59 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-toggle cache-miss
+60 http cache https://registry.npmjs.org/@radix-ui%2freact-toggle 4ms (cache hit)
+61 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-toggle set size:655369 disposed:false
+62 silly fetch manifest @radix-ui/react-checkbox@*
+63 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-checkbox cache-miss
+64 http cache https://registry.npmjs.org/@radix-ui%2freact-checkbox 3ms (cache hit)
+65 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-checkbox set size:851310 disposed:false
+66 silly fetch manifest @radix-ui/react-dropdown-menu@*
+67 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-dropdown-menu cache-miss
+68 http cache https://registry.npmjs.org/@radix-ui%2freact-dropdown-menu 6ms (cache hit)
+69 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-dropdown-menu set size:1049847 disposed:false
+70 silly fetch manifest vaul@*
+71 silly packumentCache full:https://registry.npmjs.org/vaul cache-miss
+72 http cache https://registry.npmjs.org/vaul 4ms (cache hit)
+73 silly packumentCache full:https://registry.npmjs.org/vaul set size:132229 disposed:false
+74 silly fetch manifest @radix-ui/react-avatar@*
+75 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-avatar cache-miss
+76 http cache https://registry.npmjs.org/@radix-ui%2freact-avatar 5ms (cache hit)
+77 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-avatar set size:681949 disposed:false
+78 silly fetch manifest sonner@*
+79 silly packumentCache full:https://registry.npmjs.org/sonner cache-miss
+80 http cache https://registry.npmjs.org/sonner 7ms (cache hit)
+81 silly packumentCache full:https://registry.npmjs.org/sonner set size:143249 disposed:false
+82 silly fetch manifest next-themes@*
+83 silly packumentCache full:https://registry.npmjs.org/next-themes cache-miss
+84 http cache https://registry.npmjs.org/next-themes 5ms (cache hit)
+85 silly packumentCache full:https://registry.npmjs.org/next-themes set size:162039 disposed:false
+86 silly fetch manifest class-variance-authority@*
+87 silly packumentCache full:https://registry.npmjs.org/class-variance-authority cache-miss
+88 http cache https://registry.npmjs.org/class-variance-authority 5ms (cache hit)
+89 silly packumentCache full:https://registry.npmjs.org/class-variance-authority set size:96388 disposed:false
+90 silly fetch manifest lucide-react@*
+91 silly packumentCache full:https://registry.npmjs.org/lucide-react cache-miss
+92 http cache https://registry.npmjs.org/lucide-react 12ms (cache hit)
+93 silly packumentCache full:https://registry.npmjs.org/lucide-react set size:2147355 disposed:false
+94 silly fetch manifest recharts@2.15.4
+95 silly packumentCache full:https://registry.npmjs.org/recharts cache-miss
+96 http cache https://registry.npmjs.org/recharts 12ms (cache hit)
+97 silly packumentCache full:https://registry.npmjs.org/recharts set size:1321618 disposed:false
+98 silly fetch manifest @radix-ui/react-toggle-group@*
+99 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-toggle-group cache-miss
+100 http cache https://registry.npmjs.org/@radix-ui%2freact-toggle-group 4ms (cache hit)
+101 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-toggle-group set size:799697 disposed:false
+102 silly fetch manifest @dnd-kit/core@*
+103 silly packumentCache full:https://registry.npmjs.org/@dnd-kit%2fcore cache-miss
+104 http cache https://registry.npmjs.org/@dnd-kit%2fcore 3ms (cache hit)
+105 silly packumentCache full:https://registry.npmjs.org/@dnd-kit%2fcore set size:381525 disposed:false
+106 silly fetch manifest @dnd-kit/modifiers@*
+107 silly packumentCache full:https://registry.npmjs.org/@dnd-kit%2fmodifiers cache-miss
+108 http cache https://registry.npmjs.org/@dnd-kit%2fmodifiers 2ms (cache hit)
+109 silly packumentCache full:https://registry.npmjs.org/@dnd-kit%2fmodifiers set size:283914 disposed:false
+110 silly fetch manifest @dnd-kit/sortable@*
+111 silly packumentCache full:https://registry.npmjs.org/@dnd-kit%2fsortable cache-miss
+112 http cache https://registry.npmjs.org/@dnd-kit%2fsortable 3ms (cache hit)
+113 silly packumentCache full:https://registry.npmjs.org/@dnd-kit%2fsortable set size:306409 disposed:false
+114 silly fetch manifest @dnd-kit/utilities@*
+115 silly packumentCache full:https://registry.npmjs.org/@dnd-kit%2futilities cache-miss
+116 http cache https://registry.npmjs.org/@dnd-kit%2futilities 10ms (cache hit)
+117 silly packumentCache full:https://registry.npmjs.org/@dnd-kit%2futilities set size:247103 disposed:false
+118 silly fetch manifest @tanstack/react-table@*
+119 silly packumentCache full:https://registry.npmjs.org/@tanstack%2freact-table cache-miss
+120 http cache https://registry.npmjs.org/@tanstack%2freact-table 5ms (cache hit)
+121 silly packumentCache full:https://registry.npmjs.org/@tanstack%2freact-table set size:625150 disposed:false
+122 silly fetch manifest zod@*
+123 silly packumentCache full:https://registry.npmjs.org/zod cache-miss
+124 http cache https://registry.npmjs.org/zod 8ms (cache hit)
+125 silly packumentCache full:https://registry.npmjs.org/zod set size:3462856 disposed:false
+126 silly placeDep ROOT @dnd-kit/core@6.3.1 OK for: creative-first@0.1.0 want: *
+127 silly placeDep ROOT @dnd-kit/modifiers@9.0.0 OK for: creative-first@0.1.0 want: *
+128 silly placeDep ROOT @dnd-kit/sortable@10.0.0 OK for: creative-first@0.1.0 want: *
+129 silly placeDep ROOT @dnd-kit/utilities@3.2.2 OK for: creative-first@0.1.0 want: *
+130 silly placeDep ROOT @radix-ui/react-avatar@1.1.11 OK for: creative-first@0.1.0 want: *
+131 silly placeDep ROOT @radix-ui/react-checkbox@1.3.3 OK for: creative-first@0.1.0 want: *
+132 silly placeDep ROOT @radix-ui/react-dialog@1.1.15 OK for: creative-first@0.1.0 want: *
+133 silly placeDep ROOT @radix-ui/react-dropdown-menu@2.1.16 OK for: creative-first@0.1.0 want: *
+134 silly placeDep ROOT @radix-ui/react-label@2.1.8 OK for: creative-first@0.1.0 want: *
+135 silly placeDep ROOT @radix-ui/react-select@2.2.6 OK for: creative-first@0.1.0 want: *
+136 silly placeDep ROOT @radix-ui/react-separator@1.1.8 OK for: creative-first@0.1.0 want: *
+137 silly placeDep ROOT @radix-ui/react-slot@1.2.4 OK for: creative-first@0.1.0 want: *
+138 silly placeDep ROOT @radix-ui/react-tabs@1.1.13 OK for: creative-first@0.1.0 want: *
+139 silly placeDep ROOT @radix-ui/react-toggle@1.1.10 OK for: creative-first@0.1.0 want: *
+140 silly placeDep ROOT @radix-ui/react-toggle-group@1.1.11 OK for: creative-first@0.1.0 want: *
+141 silly placeDep ROOT @radix-ui/react-tooltip@1.2.8 OK for: creative-first@0.1.0 want: *
+142 silly placeDep ROOT @tanstack/react-table@8.21.3 OK for: creative-first@0.1.0 want: *
+143 silly placeDep ROOT class-variance-authority@0.7.1 OK for: creative-first@0.1.0 want: *
+144 silly placeDep ROOT lucide-react@0.562.0 OK for: creative-first@0.1.0 want: *
+145 silly placeDep ROOT next-themes@0.4.6 OK for: creative-first@0.1.0 want: *
+146 silly placeDep ROOT recharts@2.15.4 OK for: creative-first@0.1.0 want: 2.15.4
+147 silly placeDep ROOT sonner@2.0.7 OK for: creative-first@0.1.0 want: *
+148 silly placeDep ROOT vaul@1.1.2 OK for: creative-first@0.1.0 want: *
+149 silly placeDep ROOT zod@4.3.5 OK for: creative-first@0.1.0 want: *
+150 silly fetch manifest @dnd-kit/accessibility@^3.1.1
+151 silly packumentCache full:https://registry.npmjs.org/@dnd-kit%2faccessibility cache-miss
+152 silly fetch manifest @dnd-kit/utilities@^3.2.2
+153 silly packumentCache full:https://registry.npmjs.org/@dnd-kit%2futilities cache-hit
+154 silly fetch manifest @dnd-kit/utilities@^3.2.2
+155 silly packumentCache full:https://registry.npmjs.org/@dnd-kit%2futilities cache-hit
+156 silly fetch manifest @dnd-kit/utilities@^3.2.2
+157 silly packumentCache full:https://registry.npmjs.org/@dnd-kit%2futilities cache-hit
+158 silly fetch manifest @radix-ui/react-context@1.1.3
+159 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-context cache-miss
+160 silly fetch manifest @radix-ui/react-primitive@2.1.4
+161 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-primitive cache-miss
+162 silly fetch manifest @radix-ui/react-use-is-hydrated@0.1.0
+163 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-is-hydrated cache-miss
+164 silly fetch manifest @radix-ui/react-use-callback-ref@1.1.1
+165 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-callback-ref cache-miss
+166 silly fetch manifest @radix-ui/react-use-layout-effect@1.1.1
+167 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-layout-effect cache-miss
+168 silly fetch manifest @radix-ui/primitive@1.1.3
+169 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2fprimitive cache-miss
+170 http cache https://registry.npmjs.org/@dnd-kit%2faccessibility 4ms (cache hit)
+171 silly packumentCache full:https://registry.npmjs.org/@dnd-kit%2faccessibility set size:40554 disposed:false
+172 silly fetch manifest @radix-ui/react-context@1.1.2
+173 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-context cache-miss
+174 http cache https://registry.npmjs.org/@radix-ui%2freact-use-is-hydrated 6ms (cache hit)
+175 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-is-hydrated set size:9125 disposed:false
+176 silly fetch manifest @radix-ui/react-presence@1.1.5
+177 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-presence cache-miss
+178 http cache https://registry.npmjs.org/@radix-ui%2freact-context 8ms (cache hit)
+179 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-context set size:266557 disposed:false
+180 silly fetch manifest @radix-ui/react-use-size@1.1.1
+181 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-size cache-miss
+182 http cache https://registry.npmjs.org/@radix-ui%2freact-use-callback-ref 8ms (cache hit)
+183 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-callback-ref set size:212985 disposed:false
+184 silly fetch manifest @radix-ui/react-primitive@2.1.3
+185 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-primitive cache-miss
+186 http cache https://registry.npmjs.org/@radix-ui%2freact-primitive 10ms (cache hit)
+187 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-primitive set size:595809 disposed:false
+188 silly fetch manifest @radix-ui/react-compose-refs@1.1.2
+189 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-compose-refs cache-miss
+190 http cache https://registry.npmjs.org/@radix-ui%2freact-use-layout-effect 12ms (cache hit)
+191 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-layout-effect set size:213388 disposed:false
+192 silly fetch manifest @radix-ui/react-use-previous@1.1.1
+193 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-previous cache-miss
+194 http cache https://registry.npmjs.org/@radix-ui%2freact-context 18ms (cache hit)
+195 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-context set size:266557 disposed:false
+196 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-context dispose
+197 silly fetch manifest @radix-ui/react-use-controllable-state@1.2.2
+198 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-controllable-state cache-miss
+199 http cache https://registry.npmjs.org/@radix-ui%2freact-primitive 16ms (cache hit)
+200 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-primitive set size:595809 disposed:false
+201 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-primitive dispose
+202 silly fetch manifest aria-hidden@^1.2.4
+203 silly packumentCache full:https://registry.npmjs.org/aria-hidden cache-miss
+204 http cache https://registry.npmjs.org/@radix-ui%2fprimitive 27ms (cache hit)
+205 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2fprimitive set size:164617 disposed:false
+206 silly fetch manifest @radix-ui/react-id@1.1.1
+207 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-id cache-miss
+208 http cache https://registry.npmjs.org/@radix-ui%2freact-compose-refs 16ms (cache hit)
+209 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-compose-refs set size:219425 disposed:false
+210 silly fetch manifest react-remove-scroll@^2.6.3
+211 silly packumentCache full:https://registry.npmjs.org/react-remove-scroll cache-miss
+212 http cache https://registry.npmjs.org/@radix-ui%2freact-use-size 21ms (cache hit)
+213 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-size set size:272110 disposed:false
+214 silly fetch manifest @radix-ui/react-slot@1.2.3
+215 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-slot cache-hit
+216 silly fetch manifest @radix-ui/react-portal@1.1.9
+217 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-portal cache-miss
+218 http cache https://registry.npmjs.org/@radix-ui%2freact-presence 24ms (cache hit)
+219 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-presence set size:443830 disposed:false
+220 silly fetch manifest @radix-ui/react-focus-scope@1.1.7
+221 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-focus-scope cache-miss
+222 http cache https://registry.npmjs.org/@radix-ui%2freact-use-previous 24ms (cache hit)
+223 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-previous set size:285605 disposed:false
+224 silly fetch manifest @radix-ui/react-focus-guards@1.1.3
+225 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-focus-guards cache-miss
+226 http cache https://registry.npmjs.org/aria-hidden 16ms (cache hit)
+227 silly packumentCache full:https://registry.npmjs.org/aria-hidden set size:40391 disposed:false
+228 silly fetch manifest @radix-ui/react-dismissable-layer@1.1.11
+229 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-dismissable-layer cache-miss
+230 http cache https://registry.npmjs.org/@radix-ui%2freact-use-controllable-state 21ms (cache hit)
+231 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-controllable-state set size:296080 disposed:false
+232 silly fetch manifest @radix-ui/react-id@1.1.1
+233 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-id cache-miss
+234 http cache https://registry.npmjs.org/react-remove-scroll 17ms (cache hit)
+235 silly packumentCache full:https://registry.npmjs.org/react-remove-scroll set size:147112 disposed:false
+236 silly fetch manifest @radix-ui/react-menu@2.1.16
+237 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-menu cache-miss
+238 http cache https://registry.npmjs.org/@radix-ui%2freact-id 19ms (cache hit)
+239 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-id set size:325405 disposed:false
+240 silly fetch manifest @radix-ui/number@1.1.1
+241 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2fnumber cache-miss
+242 http cache https://registry.npmjs.org/@radix-ui%2freact-portal 18ms (cache hit)
+243 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-portal set size:667939 disposed:false
+244 silly fetch manifest @radix-ui/react-popper@1.2.8
+245 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-popper cache-miss
+246 http cache https://registry.npmjs.org/@radix-ui%2freact-focus-scope 19ms (cache hit)
+247 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-focus-scope set size:643933 disposed:false
+248 silly fetch manifest @radix-ui/react-direction@1.1.1
+249 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-direction cache-miss
+250 http cache https://registry.npmjs.org/@radix-ui%2freact-focus-guards 34ms (cache hit)
+251 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-focus-guards set size:284533 disposed:false
+252 silly fetch manifest @radix-ui/react-collection@1.1.7
+253 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-collection cache-miss
+254 http cache https://registry.npmjs.org/@radix-ui%2freact-id 30ms (cache hit)
+255 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-id set size:325405 disposed:false
+256 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-id dispose
+257 silly fetch manifest @radix-ui/react-visually-hidden@1.2.3
+258 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-visually-hidden cache-miss
+259 http cache https://registry.npmjs.org/@radix-ui%2freact-dismissable-layer 37ms (cache hit)
+260 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-dismissable-layer set size:803119 disposed:false
+261 silly fetch manifest @radix-ui/react-direction@1.1.1
+262 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-direction cache-miss
+263 http cache https://registry.npmjs.org/@radix-ui%2fnumber 37ms (cache hit)
+264 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2fnumber set size:96484 disposed:false
+265 silly fetch manifest @radix-ui/react-roving-focus@1.1.11
+266 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-roving-focus cache-miss
+267 http cache https://registry.npmjs.org/@radix-ui%2freact-popper 38ms (cache hit)
+268 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-popper set size:766112 disposed:false
+269 silly fetch manifest @radix-ui/react-direction@1.1.1
+270 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-direction cache-miss
+271 http cache https://registry.npmjs.org/@radix-ui%2freact-menu 45ms (cache hit)
+272 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-menu set size:1168171 disposed:false
+273 silly fetch manifest @radix-ui/react-roving-focus@1.1.11
+274 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-roving-focus cache-miss
+275 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-visually-hidden 138ms (cache miss)
+276 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-visually-hidden set size:undefined disposed:false
+277 silly fetch manifest @tanstack/table-core@8.21.3
+278 silly packumentCache full:https://registry.npmjs.org/@tanstack%2ftable-core cache-miss
+279 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-roving-focus 164ms (cache miss)
+280 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-roving-focus set size:undefined disposed:false
+281 silly fetch manifest clsx@^2.1.1
+282 silly packumentCache full:https://registry.npmjs.org/clsx cache-miss
+283 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-roving-focus 184ms (cache miss)
+284 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-roving-focus set size:undefined disposed:false
+285 silly fetch manifest clsx@^2.0.0
+286 silly packumentCache full:https://registry.npmjs.org/clsx cache-miss
+287 http fetch GET 200 https://registry.npmjs.org/clsx 47ms (cache miss)
+288 silly packumentCache full:https://registry.npmjs.org/clsx set size:undefined disposed:false
+289 silly fetch manifest lodash@^4.17.21
+290 silly packumentCache full:https://registry.npmjs.org/lodash cache-miss
+291 http fetch GET 200 https://registry.npmjs.org/clsx 39ms (cache miss)
+292 silly packumentCache full:https://registry.npmjs.org/clsx set size:undefined disposed:false
+293 silly fetch manifest react-is@^18.3.1
+294 silly packumentCache full:https://registry.npmjs.org/react-is cache-miss
+295 http fetch GET 200 https://registry.npmjs.org/lodash 47ms (cache miss)
+296 silly packumentCache full:https://registry.npmjs.org/lodash set size:undefined disposed:false
+297 silly fetch manifest react-smooth@^4.0.4
+298 silly packumentCache full:https://registry.npmjs.org/react-smooth cache-miss
+299 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-collection 490ms (cache miss)
+300 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-collection set size:undefined disposed:false
+301 silly fetch manifest eventemitter3@^4.0.1
+302 silly packumentCache full:https://registry.npmjs.org/eventemitter3 cache-miss
+303 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-direction 497ms (cache miss)
+304 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-direction set size:undefined disposed:false
+305 silly fetch manifest recharts-scale@^0.4.4
+306 silly packumentCache full:https://registry.npmjs.org/recharts-scale cache-miss
+307 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-direction 538ms (cache miss)
+308 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-direction set size:undefined disposed:false
+309 silly fetch manifest tiny-invariant@^1.3.1
+310 silly packumentCache full:https://registry.npmjs.org/tiny-invariant cache-miss
+311 http cache https://registry.npmjs.org/tiny-invariant 3ms (cache hit)
+312 silly packumentCache full:https://registry.npmjs.org/tiny-invariant set size:98310 disposed:false
+313 silly fetch manifest victory-vendor@^36.6.8
+314 silly packumentCache full:https://registry.npmjs.org/victory-vendor cache-miss
+315 http fetch GET 200 https://registry.npmjs.org/react-is 287ms (cache miss)
+316 silly packumentCache full:https://registry.npmjs.org/react-is set size:undefined disposed:false
+317 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-direction 539ms (cache miss)
+318 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-direction set size:undefined disposed:false
+319 http fetch GET 200 https://registry.npmjs.org/react-smooth 266ms (cache miss)
+320 silly packumentCache full:https://registry.npmjs.org/react-smooth set size:undefined disposed:false
+321 http fetch GET 200 https://registry.npmjs.org/eventemitter3 62ms (cache miss)
+322 silly packumentCache full:https://registry.npmjs.org/eventemitter3 set size:undefined disposed:false
+323 http fetch GET 200 https://registry.npmjs.org/victory-vendor 44ms (cache miss)
+324 silly packumentCache full:https://registry.npmjs.org/victory-vendor set size:undefined disposed:false
+325 http fetch GET 200 https://registry.npmjs.org/recharts-scale 54ms (cache miss)
+326 silly packumentCache full:https://registry.npmjs.org/recharts-scale set size:undefined disposed:false
+327 http fetch GET 200 https://registry.npmjs.org/@tanstack%2ftable-core 525ms (cache miss)
+328 silly packumentCache full:https://registry.npmjs.org/@tanstack%2ftable-core set size:undefined disposed:false
+329 silly fetch manifest react@>=16.8.0
+330 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+331 http cache https://registry.npmjs.org/react 9ms (cache hit)
+332 silly packumentCache full:https://registry.npmjs.org/react set size:6366570 disposed:false
+333 silly placeDep ROOT @dnd-kit/accessibility@3.1.1 OK for: @dnd-kit/core@6.3.1 want: ^3.1.1
+334 silly fetch manifest @types/react@*
+335 silly packumentCache full:https://registry.npmjs.org/@types%2freact cache-miss
+336 http cache https://registry.npmjs.org/@types%2freact 10ms (cache hit)
+337 silly packumentCache full:https://registry.npmjs.org/@types%2freact set size:2541992 disposed:false
+338 silly fetch manifest react@^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+339 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+340 http cache https://registry.npmjs.org/react 14ms (cache hit)
+341 silly packumentCache full:https://registry.npmjs.org/react set size:6366570 disposed:false
+342 silly fetch manifest @types/react-dom@*
+343 silly packumentCache full:https://registry.npmjs.org/@types%2freact-dom cache-hit
+344 silly fetch manifest react-dom@^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+345 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+346 http cache https://registry.npmjs.org/react-dom 12ms (cache hit)
+347 silly packumentCache full:https://registry.npmjs.org/react-dom set size:8382055 disposed:false
+348 silly placeDep ROOT @radix-ui/react-context@1.1.3 OK for: @radix-ui/react-avatar@1.1.11 want: 1.1.3
+349 silly placeDep ROOT @radix-ui/react-primitive@2.1.4 OK for: @radix-ui/react-avatar@1.1.11 want: 2.1.4
+350 silly placeDep ROOT @radix-ui/react-use-callback-ref@1.1.1 OK for: @radix-ui/react-avatar@1.1.11 want: 1.1.1
+351 silly placeDep ROOT @radix-ui/react-use-is-hydrated@0.1.0 OK for: @radix-ui/react-avatar@1.1.11 want: 0.1.0
+352 silly placeDep ROOT @radix-ui/react-use-layout-effect@1.1.1 OK for: @radix-ui/react-avatar@1.1.11 want: 1.1.1
+353 silly fetch manifest use-sync-external-store@^1.5.0
+354 silly packumentCache full:https://registry.npmjs.org/use-sync-external-store cache-miss
+355 http fetch GET 200 https://registry.npmjs.org/use-sync-external-store 195ms (cache miss)
+356 silly packumentCache full:https://registry.npmjs.org/use-sync-external-store set size:undefined disposed:false
+357 silly placeDep ROOT @radix-ui/primitive@1.1.3 OK for: @radix-ui/react-checkbox@1.3.3 want: 1.1.3
+358 silly placeDep ROOT @radix-ui/react-compose-refs@1.1.2 OK for: @radix-ui/react-checkbox@1.3.3 want: 1.1.2
+359 silly placeDep node_modules/@radix-ui/react-checkbox @radix-ui/react-context@1.1.2 OK for: @radix-ui/react-checkbox@1.3.3 want: 1.1.2
+360 silly placeDep ROOT @radix-ui/react-presence@1.1.5 OK for: @radix-ui/react-checkbox@1.3.3 want: 1.1.5
+361 silly placeDep node_modules/@radix-ui/react-checkbox @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-checkbox@1.3.3 want: 2.1.3
+362 silly placeDep ROOT @radix-ui/react-use-controllable-state@1.2.2 OK for: @radix-ui/react-checkbox@1.3.3 want: 1.2.2
+363 silly placeDep ROOT @radix-ui/react-use-previous@1.1.1 OK for: @radix-ui/react-checkbox@1.3.3 want: 1.1.1
+364 silly placeDep ROOT @radix-ui/react-use-size@1.1.1 OK for: @radix-ui/react-checkbox@1.3.3 want: 1.1.1
+365 silly fetch manifest @radix-ui/react-use-effect-event@0.0.2
+366 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-effect-event cache-miss
+367 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-use-effect-event 454ms (cache miss)
+368 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-effect-event set size:undefined disposed:false
+369 silly placeDep node_modules/@radix-ui/react-dialog @radix-ui/react-context@1.1.2 OK for: @radix-ui/react-dialog@1.1.15 want: 1.1.2
+370 silly placeDep ROOT @radix-ui/react-dismissable-layer@1.1.11 OK for: @radix-ui/react-dialog@1.1.15 want: 1.1.11
+371 silly placeDep ROOT @radix-ui/react-focus-guards@1.1.3 OK for: @radix-ui/react-dialog@1.1.15 want: 1.1.3
+372 silly placeDep ROOT @radix-ui/react-focus-scope@1.1.7 OK for: @radix-ui/react-dialog@1.1.15 want: 1.1.7
+373 silly placeDep ROOT @radix-ui/react-id@1.1.1 OK for: @radix-ui/react-dialog@1.1.15 want: 1.1.1
+374 silly placeDep ROOT @radix-ui/react-portal@1.1.9 OK for: @radix-ui/react-dialog@1.1.15 want: 1.1.9
+375 silly placeDep node_modules/@radix-ui/react-dialog @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-dialog@1.1.15 want: 2.1.3
+376 silly placeDep node_modules/@radix-ui/react-dialog @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-dialog@1.1.15 want: 1.2.3
+377 silly placeDep ROOT aria-hidden@1.2.6 OK for: @radix-ui/react-dialog@1.1.15 want: ^1.2.4
+378 silly placeDep ROOT react-remove-scroll@2.7.2 OK for: @radix-ui/react-dialog@1.1.15 want: ^2.6.3
+379 silly fetch manifest @radix-ui/react-use-escape-keydown@1.1.1
+380 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-escape-keydown cache-miss
+381 silly fetch manifest react-remove-scroll-bar@^2.3.7
+382 silly packumentCache full:https://registry.npmjs.org/react-remove-scroll-bar cache-miss
+383 silly fetch manifest react-style-singleton@^2.2.3
+384 silly packumentCache full:https://registry.npmjs.org/react-style-singleton cache-miss
+385 silly fetch manifest use-callback-ref@^1.3.3
+386 silly packumentCache full:https://registry.npmjs.org/use-callback-ref cache-miss
+387 silly fetch manifest use-sidecar@^1.1.3
+388 silly packumentCache full:https://registry.npmjs.org/use-sidecar cache-miss
+389 http fetch GET 200 https://registry.npmjs.org/react-style-singleton 78ms (cache miss)
+390 silly packumentCache full:https://registry.npmjs.org/react-style-singleton set size:undefined disposed:false
+391 http fetch GET 200 https://registry.npmjs.org/use-sidecar 80ms (cache miss)
+392 silly packumentCache full:https://registry.npmjs.org/use-sidecar set size:undefined disposed:false
+393 http fetch GET 200 https://registry.npmjs.org/use-callback-ref 86ms (cache miss)
+394 silly packumentCache full:https://registry.npmjs.org/use-callback-ref set size:undefined disposed:false
+395 http fetch GET 200 https://registry.npmjs.org/react-remove-scroll-bar 88ms (cache miss)
+396 silly packumentCache full:https://registry.npmjs.org/react-remove-scroll-bar set size:undefined disposed:false
+397 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-use-escape-keydown 797ms (cache miss)
+398 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-escape-keydown set size:undefined disposed:false
+399 silly placeDep node_modules/@radix-ui/react-dismissable-layer @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-dismissable-layer@1.1.11 want: 2.1.3
+400 silly placeDep ROOT @radix-ui/react-use-escape-keydown@1.1.1 OK for: @radix-ui/react-dismissable-layer@1.1.11 want: 1.1.1
+401 silly placeDep node_modules/@radix-ui/react-dropdown-menu @radix-ui/react-context@1.1.2 OK for: @radix-ui/react-dropdown-menu@2.1.16 want: 1.1.2
+402 silly placeDep ROOT @radix-ui/react-menu@2.1.16 OK for: @radix-ui/react-dropdown-menu@2.1.16 want: 2.1.16
+403 silly placeDep node_modules/@radix-ui/react-dropdown-menu @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-dropdown-menu@2.1.16 want: 2.1.3
+404 silly placeDep node_modules/@radix-ui/react-focus-scope @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-focus-scope@1.1.7 want: 2.1.3
+405 silly placeDep ROOT @radix-ui/react-collection@1.1.7 OK for: @radix-ui/react-menu@2.1.16 want: 1.1.7
+406 silly placeDep node_modules/@radix-ui/react-menu @radix-ui/react-context@1.1.2 OK for: @radix-ui/react-menu@2.1.16 want: 1.1.2
+407 silly placeDep ROOT @radix-ui/react-direction@1.1.1 OK for: @radix-ui/react-menu@2.1.16 want: 1.1.1
+408 silly placeDep ROOT @radix-ui/react-popper@1.2.8 OK for: @radix-ui/react-menu@2.1.16 want: 1.2.8
+409 silly placeDep node_modules/@radix-ui/react-menu @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-menu@2.1.16 want: 2.1.3
+410 silly placeDep ROOT @radix-ui/react-roving-focus@1.1.11 OK for: @radix-ui/react-menu@2.1.16 want: 1.1.11
+411 silly placeDep node_modules/@radix-ui/react-menu @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-menu@2.1.16 want: 1.2.3
+412 silly fetch manifest @radix-ui/rect@1.1.1
+413 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2frect cache-miss
+414 silly fetch manifest @radix-ui/react-arrow@1.1.7
+415 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-arrow cache-miss
+416 silly fetch manifest @floating-ui/react-dom@^2.0.0
+417 silly packumentCache full:https://registry.npmjs.org/@floating-ui%2freact-dom cache-miss
+418 silly fetch manifest @radix-ui/react-use-rect@1.1.1
+419 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-rect cache-miss
+420 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-arrow 385ms (cache miss)
+421 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-arrow set size:undefined disposed:false
+422 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2frect 390ms (cache miss)
+423 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2frect set size:undefined disposed:false
+424 http fetch GET 200 https://registry.npmjs.org/@radix-ui%2freact-use-rect 398ms (cache miss)
+425 silly packumentCache full:https://registry.npmjs.org/@radix-ui%2freact-use-rect set size:undefined disposed:false
+426 http fetch GET 200 https://registry.npmjs.org/@floating-ui%2freact-dom 592ms (cache miss)
+427 silly packumentCache full:https://registry.npmjs.org/@floating-ui%2freact-dom set size:undefined disposed:false
+428 silly placeDep node_modules/@radix-ui/react-collection @radix-ui/react-context@1.1.2 OK for: @radix-ui/react-collection@1.1.7 want: 1.1.2
+429 silly placeDep node_modules/@radix-ui/react-collection @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-collection@1.1.7 want: 2.1.3
+430 silly placeDep node_modules/@radix-ui/react-collection @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-collection@1.1.7 want: 1.2.3
+431 silly placeDep ROOT @floating-ui/react-dom@2.1.6 OK for: @radix-ui/react-popper@1.2.8 want: ^2.0.0
+432 silly placeDep ROOT @radix-ui/react-arrow@1.1.7 OK for: @radix-ui/react-popper@1.2.8 want: 1.1.7
+433 silly placeDep node_modules/@radix-ui/react-popper @radix-ui/react-context@1.1.2 OK for: @radix-ui/react-popper@1.2.8 want: 1.1.2
+434 silly placeDep node_modules/@radix-ui/react-popper @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-popper@1.2.8 want: 2.1.3
+435 silly placeDep ROOT @radix-ui/react-use-rect@1.1.1 OK for: @radix-ui/react-popper@1.2.8 want: 1.1.1
+436 silly placeDep ROOT @radix-ui/rect@1.1.1 OK for: @radix-ui/react-popper@1.2.8 want: 1.1.1
+437 silly fetch manifest @floating-ui/dom@^1.7.4
+438 silly packumentCache full:https://registry.npmjs.org/@floating-ui%2fdom cache-miss
+439 http fetch GET 200 https://registry.npmjs.org/@floating-ui%2fdom 56ms (cache miss)
+440 silly packumentCache full:https://registry.npmjs.org/@floating-ui%2fdom set size:undefined disposed:false
+441 silly placeDep ROOT @floating-ui/dom@1.7.4 OK for: @floating-ui/react-dom@2.1.6 want: ^1.7.4
+442 silly fetch manifest @floating-ui/core@^1.7.3
+443 silly packumentCache full:https://registry.npmjs.org/@floating-ui%2fcore cache-miss
+444 silly fetch manifest @floating-ui/utils@^0.2.10
+445 silly packumentCache full:https://registry.npmjs.org/@floating-ui%2futils cache-miss
+446 http fetch GET 200 https://registry.npmjs.org/@floating-ui%2futils 52ms (cache miss)
+447 silly packumentCache full:https://registry.npmjs.org/@floating-ui%2futils set size:undefined disposed:false
+448 http fetch GET 200 https://registry.npmjs.org/@floating-ui%2fcore 60ms (cache miss)
+449 silly packumentCache full:https://registry.npmjs.org/@floating-ui%2fcore set size:undefined disposed:false
+450 silly placeDep ROOT @floating-ui/core@1.7.3 OK for: @floating-ui/dom@1.7.4 want: ^1.7.3
+451 silly placeDep ROOT @floating-ui/utils@0.2.10 OK for: @floating-ui/dom@1.7.4 want: ^0.2.10
+452 silly placeDep node_modules/@radix-ui/react-arrow @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-arrow@1.1.7 want: 2.1.3
+453 silly placeDep node_modules/@radix-ui/react-portal @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-portal@1.1.9 want: 2.1.3
+454 silly placeDep node_modules/@radix-ui/react-roving-focus @radix-ui/react-context@1.1.2 OK for: @radix-ui/react-roving-focus@1.1.11 want: 1.1.2
+455 silly placeDep node_modules/@radix-ui/react-roving-focus @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-roving-focus@1.1.11 want: 2.1.3
+456 silly placeDep ROOT @radix-ui/number@1.1.1 OK for: @radix-ui/react-select@2.2.6 want: 1.1.1
+457 silly placeDep node_modules/@radix-ui/react-select @radix-ui/react-context@1.1.2 OK for: @radix-ui/react-select@2.2.6 want: 1.1.2
+458 silly placeDep node_modules/@radix-ui/react-select @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-select@2.2.6 want: 2.1.3
+459 silly placeDep node_modules/@radix-ui/react-select @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-select@2.2.6 want: 1.2.3
+460 silly placeDep ROOT @radix-ui/react-visually-hidden@1.2.3 OK for: @radix-ui/react-select@2.2.6 want: 1.2.3
+461 silly placeDep node_modules/@radix-ui/react-tabs @radix-ui/react-context@1.1.2 OK for: @radix-ui/react-tabs@1.1.13 want: 1.1.2
+462 silly placeDep node_modules/@radix-ui/react-tabs @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-tabs@1.1.13 want: 2.1.3
+463 silly placeDep node_modules/@radix-ui/react-toggle @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-toggle@1.1.10 want: 2.1.3
+464 silly placeDep node_modules/@radix-ui/react-toggle-group @radix-ui/react-context@1.1.2 OK for: @radix-ui/react-toggle-group@1.1.11 want: 1.1.2
+465 silly placeDep node_modules/@radix-ui/react-toggle-group @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-toggle-group@1.1.11 want: 2.1.3
+466 silly placeDep node_modules/@radix-ui/react-tooltip @radix-ui/react-context@1.1.2 OK for: @radix-ui/react-tooltip@1.2.8 want: 1.1.2
+467 silly placeDep node_modules/@radix-ui/react-tooltip @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-tooltip@1.2.8 want: 2.1.3
+468 silly placeDep node_modules/@radix-ui/react-tooltip @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-tooltip@1.2.8 want: 1.2.3
+469 silly placeDep ROOT @radix-ui/react-use-effect-event@0.0.2 OK for: @radix-ui/react-use-controllable-state@1.2.2 want: 0.0.2
+470 silly placeDep ROOT use-sync-external-store@1.6.0 OK for: @radix-ui/react-use-is-hydrated@0.1.0 want: ^1.5.0
+471 silly placeDep node_modules/@radix-ui/react-visually-hidden @radix-ui/react-primitive@2.1.3 OK for: @radix-ui/react-visually-hidden@1.2.3 want: 2.1.3
+472 silly placeDep ROOT @tanstack/table-core@8.21.3 OK for: @tanstack/react-table@8.21.3 want: 8.21.3
+473 silly placeDep ROOT clsx@2.1.1 OK for: class-variance-authority@0.7.1 want: ^2.1.1
+474 silly fetch manifest react@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+475 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+476 http cache https://registry.npmjs.org/react 8ms (cache hit)
+477 silly packumentCache full:https://registry.npmjs.org/react set size:6366570 disposed:false
+478 silly placeDep ROOT react-remove-scroll-bar@2.3.8 OK for: react-remove-scroll@2.7.2 want: ^2.3.7
+479 silly placeDep ROOT react-style-singleton@2.2.3 OK for: react-remove-scroll@2.7.2 want: ^2.2.3
+480 silly placeDep ROOT use-callback-ref@1.3.3 OK for: react-remove-scroll@2.7.2 want: ^1.3.3
+481 silly placeDep ROOT use-sidecar@1.1.3 OK for: react-remove-scroll@2.7.2 want: ^1.1.3
+482 silly fetch manifest react-style-singleton@^2.2.2
+483 silly packumentCache full:https://registry.npmjs.org/react-style-singleton cache-miss
+484 silly fetch manifest get-nonce@^1.0.0
+485 silly packumentCache full:https://registry.npmjs.org/get-nonce cache-miss
+486 silly fetch manifest detect-node-es@^1.1.0
+487 silly packumentCache full:https://registry.npmjs.org/detect-node-es cache-miss
+488 http cache https://registry.npmjs.org/react-style-singleton 3ms (cache hit)
+489 silly packumentCache full:https://registry.npmjs.org/react-style-singleton set size:33682 disposed:false
+490 http fetch GET 200 https://registry.npmjs.org/detect-node-es 43ms (cache miss)
+491 silly packumentCache full:https://registry.npmjs.org/detect-node-es set size:undefined disposed:false
+492 http fetch GET 200 https://registry.npmjs.org/get-nonce 48ms (cache miss)
+493 silly packumentCache full:https://registry.npmjs.org/get-nonce set size:undefined disposed:false
+494 silly placeDep ROOT get-nonce@1.0.1 OK for: react-style-singleton@2.2.3 want: ^1.0.0
+495 silly fetch manifest react@^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+496 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+497 http cache https://registry.npmjs.org/react 10ms (cache hit)
+498 silly packumentCache full:https://registry.npmjs.org/react set size:6366570 disposed:false
+499 silly fetch manifest react-dom@^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+500 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+501 http cache https://registry.npmjs.org/react-dom 15ms (cache hit)
+502 silly packumentCache full:https://registry.npmjs.org/react-dom set size:8382055 disposed:false
+503 silly placeDep ROOT eventemitter3@4.0.7 OK for: recharts@2.15.4 want: ^4.0.1
+504 silly placeDep ROOT lodash@4.17.21 OK for: recharts@2.15.4 want: ^4.17.21
+505 silly placeDep node_modules/recharts react-is@18.3.1 OK for: recharts@2.15.4 want: ^18.3.1
+506 silly placeDep ROOT react-smooth@4.0.4 OK for: recharts@2.15.4 want: ^4.0.4
+507 silly placeDep ROOT recharts-scale@0.4.5 OK for: recharts@2.15.4 want: ^0.4.4
+508 silly placeDep ROOT tiny-invariant@1.3.3 OK for: recharts@2.15.4 want: ^1.3.1
+509 silly placeDep ROOT victory-vendor@36.9.2 OK for: recharts@2.15.4 want: ^36.6.8
+510 silly fetch manifest fast-equals@^5.0.1
+511 silly packumentCache full:https://registry.npmjs.org/fast-equals cache-miss
+512 silly fetch manifest react-transition-group@^4.4.5
+513 silly packumentCache full:https://registry.npmjs.org/react-transition-group cache-miss
+514 silly fetch manifest decimal.js-light@^2.4.1
+515 silly packumentCache full:https://registry.npmjs.org/decimal.js-light cache-miss
+516 silly fetch manifest d3-ease@^3.0.1
+517 silly packumentCache full:https://registry.npmjs.org/d3-ease cache-miss
+518 silly fetch manifest d3-time@^3.0.0
+519 silly packumentCache full:https://registry.npmjs.org/d3-time cache-miss
+520 silly fetch manifest d3-array@^3.1.6
+521 silly packumentCache full:https://registry.npmjs.org/d3-array cache-miss
+522 silly fetch manifest d3-scale@^4.0.2
+523 silly packumentCache full:https://registry.npmjs.org/d3-scale cache-miss
+524 http fetch GET 200 https://registry.npmjs.org/react-transition-group 45ms (cache miss)
+525 silly packumentCache full:https://registry.npmjs.org/react-transition-group set size:undefined disposed:false
+526 silly fetch manifest d3-shape@^3.1.0
+527 silly packumentCache full:https://registry.npmjs.org/d3-shape cache-miss
+528 http fetch GET 200 https://registry.npmjs.org/d3-time 57ms (cache miss)
+529 silly packumentCache full:https://registry.npmjs.org/d3-time set size:undefined disposed:false
+530 silly fetch manifest d3-timer@^3.0.1
+531 silly packumentCache full:https://registry.npmjs.org/d3-timer cache-miss
+532 http fetch GET 200 https://registry.npmjs.org/decimal.js-light 61ms (cache miss)
+533 silly packumentCache full:https://registry.npmjs.org/decimal.js-light set size:undefined disposed:false
+534 silly fetch manifest @types/d3-ease@^3.0.0
+535 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-ease cache-miss
+536 http fetch GET 200 https://registry.npmjs.org/d3-ease 63ms (cache miss)
+537 silly packumentCache full:https://registry.npmjs.org/d3-ease set size:undefined disposed:false
+538 silly fetch manifest @types/d3-time@^3.0.0
+539 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-time cache-miss
+540 http fetch GET 200 https://registry.npmjs.org/fast-equals 67ms (cache miss)
+541 silly packumentCache full:https://registry.npmjs.org/fast-equals set size:undefined disposed:false
+542 silly fetch manifest d3-interpolate@^3.0.1
+543 silly packumentCache full:https://registry.npmjs.org/d3-interpolate cache-miss
+544 http fetch GET 200 https://registry.npmjs.org/d3-scale 79ms (cache miss)
+545 silly packumentCache full:https://registry.npmjs.org/d3-scale set size:undefined disposed:false
+546 silly fetch manifest @types/d3-array@^3.0.3
+547 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-array cache-miss
+548 http fetch GET 200 https://registry.npmjs.org/d3-array 93ms (cache miss)
+549 silly packumentCache full:https://registry.npmjs.org/d3-array set size:undefined disposed:false
+550 silly fetch manifest @types/d3-scale@^4.0.2
+551 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-scale cache-miss
+552 http fetch GET 200 https://registry.npmjs.org/d3-shape 59ms (cache miss)
+553 silly packumentCache full:https://registry.npmjs.org/d3-shape set size:undefined disposed:false
+554 silly fetch manifest @types/d3-shape@^3.1.0
+555 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-shape cache-miss
+556 http fetch GET 200 https://registry.npmjs.org/d3-timer 53ms (cache miss)
+557 silly packumentCache full:https://registry.npmjs.org/d3-timer set size:undefined disposed:false
+558 silly fetch manifest @types/d3-timer@^3.0.0
+559 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-timer cache-miss
+560 http fetch GET 200 https://registry.npmjs.org/@types%2fd3-ease 57ms (cache miss)
+561 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-ease set size:undefined disposed:false
+562 silly fetch manifest @types/d3-interpolate@^3.0.1
+563 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-interpolate cache-miss
+564 http fetch GET 200 https://registry.npmjs.org/@types%2fd3-time 55ms (cache miss)
+565 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-time set size:undefined disposed:false
+566 http fetch GET 200 https://registry.npmjs.org/d3-interpolate 54ms (cache miss)
+567 silly packumentCache full:https://registry.npmjs.org/d3-interpolate set size:undefined disposed:false
+568 http fetch GET 200 https://registry.npmjs.org/@types%2fd3-shape 55ms (cache miss)
+569 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-shape set size:undefined disposed:false
+570 http fetch GET 200 https://registry.npmjs.org/@types%2fd3-scale 74ms (cache miss)
+571 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-scale set size:undefined disposed:false
+572 http fetch GET 200 https://registry.npmjs.org/@types%2fd3-timer 63ms (cache miss)
+573 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-timer set size:undefined disposed:false
+574 http fetch GET 200 https://registry.npmjs.org/@types%2fd3-interpolate 59ms (cache miss)
+575 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-interpolate set size:undefined disposed:false
+576 http fetch GET 200 https://registry.npmjs.org/@types%2fd3-array 295ms (cache miss)
+577 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-array set size:undefined disposed:false
+578 silly fetch manifest react@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+579 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+580 http cache https://registry.npmjs.org/react 7ms (cache hit)
+581 silly packumentCache full:https://registry.npmjs.org/react set size:6366570 disposed:false
+582 silly fetch manifest react-dom@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+583 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+584 http cache https://registry.npmjs.org/react-dom 14ms (cache hit)
+585 silly packumentCache full:https://registry.npmjs.org/react-dom set size:8382055 disposed:false
+586 silly placeDep ROOT fast-equals@5.4.0 OK for: react-smooth@4.0.4 want: ^5.0.1
+587 silly placeDep ROOT react-transition-group@4.4.5 OK for: react-smooth@4.0.4 want: ^4.4.5
+588 silly fetch manifest @babel/runtime@^7.5.5
+589 silly packumentCache full:https://registry.npmjs.org/@babel%2fruntime cache-miss
+590 silly fetch manifest dom-helpers@^5.0.1
+591 silly packumentCache full:https://registry.npmjs.org/dom-helpers cache-miss
+592 http fetch GET 200 https://registry.npmjs.org/dom-helpers 47ms (cache miss)
+593 silly packumentCache full:https://registry.npmjs.org/dom-helpers set size:undefined disposed:false
+594 http fetch GET 200 https://registry.npmjs.org/@babel%2fruntime 125ms (cache miss)
+595 silly packumentCache full:https://registry.npmjs.org/@babel%2fruntime set size:undefined disposed:false
+596 silly placeDep ROOT @babel/runtime@7.28.4 OK for: react-transition-group@4.4.5 want: ^7.5.5
+597 silly placeDep ROOT dom-helpers@5.2.1 OK for: react-transition-group@4.4.5 want: ^5.0.1
+598 silly placeDep ROOT decimal.js-light@2.5.1 OK for: recharts-scale@0.4.5 want: ^2.4.1
+599 silly placeDep ROOT detect-node-es@1.1.0 OK for: use-sidecar@1.1.3 want: ^1.1.0
+600 silly placeDep ROOT @types/d3-array@3.2.2 OK for: victory-vendor@36.9.2 want: ^3.0.3
+601 silly placeDep ROOT @types/d3-ease@3.0.2 OK for: victory-vendor@36.9.2 want: ^3.0.0
+602 silly placeDep ROOT @types/d3-interpolate@3.0.4 OK for: victory-vendor@36.9.2 want: ^3.0.1
+603 silly placeDep ROOT @types/d3-scale@4.0.9 OK for: victory-vendor@36.9.2 want: ^4.0.2
+604 silly placeDep ROOT @types/d3-shape@3.1.7 OK for: victory-vendor@36.9.2 want: ^3.1.0
+605 silly placeDep ROOT @types/d3-time@3.0.4 OK for: victory-vendor@36.9.2 want: ^3.0.0
+606 silly placeDep ROOT @types/d3-timer@3.0.2 OK for: victory-vendor@36.9.2 want: ^3.0.0
+607 silly placeDep ROOT d3-array@3.2.4 OK for: victory-vendor@36.9.2 want: ^3.1.6
+608 silly placeDep ROOT d3-ease@3.0.1 OK for: victory-vendor@36.9.2 want: ^3.0.1
+609 silly placeDep ROOT d3-interpolate@3.0.1 OK for: victory-vendor@36.9.2 want: ^3.0.1
+610 silly placeDep ROOT d3-scale@4.0.2 OK for: victory-vendor@36.9.2 want: ^4.0.2
+611 silly placeDep ROOT d3-shape@3.2.0 OK for: victory-vendor@36.9.2 want: ^3.1.0
+612 silly placeDep ROOT d3-time@3.1.0 OK for: victory-vendor@36.9.2 want: ^3.0.0
+613 silly placeDep ROOT d3-timer@3.0.1 OK for: victory-vendor@36.9.2 want: ^3.0.1
+614 silly fetch manifest @types/d3-color@*
+615 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-color cache-miss
+616 silly fetch manifest @types/d3-time@*
+617 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-time cache-miss
+618 silly fetch manifest @types/d3-path@*
+619 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-path cache-miss
+620 silly fetch manifest internmap@1 - 2
+621 silly packumentCache full:https://registry.npmjs.org/internmap cache-miss
+622 silly fetch manifest d3-color@1 - 3
+623 silly packumentCache full:https://registry.npmjs.org/d3-color cache-miss
+624 silly fetch manifest d3-format@1 - 3
+625 silly packumentCache full:https://registry.npmjs.org/d3-format cache-miss
+626 silly fetch manifest d3-time@2.1.1 - 3
+627 silly packumentCache full:https://registry.npmjs.org/d3-time cache-miss
+628 http cache https://registry.npmjs.org/@types%2fd3-time 3ms (cache hit)
+629 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-time set size:52652 disposed:false
+630 silly fetch manifest d3-time-format@2 - 4
+631 silly packumentCache full:https://registry.npmjs.org/d3-time-format cache-miss
+632 http cache https://registry.npmjs.org/d3-time 3ms (cache hit)
+633 silly packumentCache full:https://registry.npmjs.org/d3-time set size:150406 disposed:false
+634 silly fetch manifest d3-path@^3.1.0
+635 silly packumentCache full:https://registry.npmjs.org/d3-path cache-miss
+636 http fetch GET 200 https://registry.npmjs.org/d3-time-format 47ms (cache miss)
+637 silly packumentCache full:https://registry.npmjs.org/d3-time-format set size:undefined disposed:false
+638 http fetch GET 200 https://registry.npmjs.org/d3-format 52ms (cache miss)
+639 silly packumentCache full:https://registry.npmjs.org/d3-format set size:undefined disposed:false
+640 http fetch GET 200 https://registry.npmjs.org/internmap 55ms (cache miss)
+641 silly packumentCache full:https://registry.npmjs.org/internmap set size:undefined disposed:false
+642 http fetch GET 200 https://registry.npmjs.org/d3-path 50ms (cache miss)
+643 silly packumentCache full:https://registry.npmjs.org/d3-path set size:undefined disposed:false
+644 http fetch GET 200 https://registry.npmjs.org/d3-color 56ms (cache miss)
+645 silly packumentCache full:https://registry.npmjs.org/d3-color set size:undefined disposed:false
+646 http fetch GET 200 https://registry.npmjs.org/@types%2fd3-color 66ms (cache miss)
+647 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-color set size:undefined disposed:false
+648 http fetch GET 200 https://registry.npmjs.org/@types%2fd3-path 67ms (cache miss)
+649 silly packumentCache full:https://registry.npmjs.org/@types%2fd3-path set size:undefined disposed:false
+650 silly placeDep ROOT @types/d3-color@3.1.3 OK for: @types/d3-interpolate@3.0.4 want: *
+651 silly placeDep ROOT @types/d3-path@3.1.1 OK for: @types/d3-shape@3.1.7 want: *
+652 silly placeDep ROOT internmap@2.0.3 OK for: d3-array@3.2.4 want: 1 - 2
+653 silly placeDep ROOT d3-color@3.1.0 OK for: d3-interpolate@3.0.1 want: 1 - 3
+654 silly placeDep ROOT d3-format@3.1.0 OK for: d3-scale@4.0.2 want: 1 - 3
+655 silly placeDep ROOT d3-time-format@4.1.0 OK for: d3-scale@4.0.2 want: 2 - 4
+656 silly placeDep ROOT d3-path@3.1.0 OK for: d3-shape@3.2.0 want: ^3.1.0
+657 silly placeDep node_modules/@radix-ui/react-arrow @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-primitive@2.1.3 want: 1.2.3
+658 silly placeDep node_modules/@radix-ui/react-checkbox @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-primitive@2.1.3 want: 1.2.3
+659 silly placeDep node_modules/@radix-ui/react-dismissable-layer @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-primitive@2.1.3 want: 1.2.3
+660 silly placeDep node_modules/@radix-ui/react-dropdown-menu @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-primitive@2.1.3 want: 1.2.3
+661 silly placeDep node_modules/@radix-ui/react-focus-scope @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-primitive@2.1.3 want: 1.2.3
+662 silly placeDep node_modules/@radix-ui/react-popper @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-primitive@2.1.3 want: 1.2.3
+663 silly placeDep node_modules/@radix-ui/react-portal @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-primitive@2.1.3 want: 1.2.3
+664 silly placeDep node_modules/@radix-ui/react-roving-focus @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-primitive@2.1.3 want: 1.2.3
+665 silly placeDep node_modules/@radix-ui/react-tabs @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-primitive@2.1.3 want: 1.2.3
+666 silly placeDep node_modules/@radix-ui/react-toggle-group @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-primitive@2.1.3 want: 1.2.3
+667 silly placeDep node_modules/@radix-ui/react-toggle @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-primitive@2.1.3 want: 1.2.3
+668 silly placeDep node_modules/@radix-ui/react-visually-hidden @radix-ui/react-slot@1.2.3 OK for: @radix-ui/react-primitive@2.1.3 want: 1.2.3
+669 silly reify moves {}
+670 silly audit bulk request {
+670 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+670 silly audit   '@emnapi/core': [ '1.8.1' ],
+670 silly audit   '@emnapi/runtime': [ '1.8.0' ],
+670 silly audit   '@emnapi/wasi-threads': [ '1.1.0' ],
+670 silly audit   '@eslint-community/eslint-utils': [ '4.9.1' ],
+670 silly audit   '@eslint-community/regexpp': [ '4.12.2' ],
+670 silly audit   '@eslint/eslintrc': [ '2.1.4' ],
+670 silly audit   '@eslint/js': [ '8.57.1' ],
+670 silly audit   '@humanwhocodes/config-array': [ '0.13.0' ],
+670 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+670 silly audit   '@humanwhocodes/object-schema': [ '2.0.3' ],
+670 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+670 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+670 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+670 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+670 silly audit   '@napi-rs/wasm-runtime': [ '0.2.12' ],
+670 silly audit   '@next/env': [ '14.2.35' ],
+670 silly audit   '@next/eslint-plugin-next': [ '15.0.0' ],
+670 silly audit   '@next/swc-darwin-arm64': [ '14.2.33' ],
+670 silly audit   '@next/swc-darwin-x64': [ '14.2.33' ],
+670 silly audit   '@next/swc-linux-arm64-gnu': [ '14.2.33' ],
+670 silly audit   '@next/swc-linux-arm64-musl': [ '14.2.33' ],
+670 silly audit   '@next/swc-linux-x64-gnu': [ '14.2.33' ],
+670 silly audit   '@next/swc-linux-x64-musl': [ '14.2.33' ],
+670 silly audit   '@next/swc-win32-arm64-msvc': [ '14.2.33' ],
+670 silly audit   '@next/swc-win32-ia32-msvc': [ '14.2.33' ],
+670 silly audit   '@next/swc-win32-x64-msvc': [ '14.2.33' ],
+670 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+670 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+670 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+670 silly audit   '@nolyfill/is-core-module': [ '1.0.39' ],
+670 silly audit   '@rtsao/scc': [ '1.1.0' ],
+670 silly audit   '@rushstack/eslint-patch': [ '1.15.0' ],
+670 silly audit   '@supabase/auth-helpers-nextjs': [ '0.10.0' ],
+670 silly audit   '@supabase/auth-helpers-shared': [ '0.7.0' ],
+670 silly audit   '@supabase/auth-js': [ '2.89.0' ],
+670 silly audit   '@supabase/functions-js': [ '2.89.0' ],
+670 silly audit   '@supabase/postgrest-js': [ '2.89.0' ],
+670 silly audit   '@supabase/realtime-js': [ '2.89.0' ],
+670 silly audit   '@supabase/storage-js': [ '2.89.0' ],
+670 silly audit   '@supabase/supabase-js': [ '2.89.0' ],
+670 silly audit   '@swc/counter': [ '0.1.3' ],
+670 silly audit   '@swc/helpers': [ '0.5.5' ],
+670 silly audit   '@tybys/wasm-util': [ '0.10.1' ],
+670 silly audit   '@types/json5': [ '0.0.29' ],
+670 silly audit   '@types/node': [ '20.19.27' ],
+670 silly audit   '@types/phoenix': [ '1.6.7' ],
+670 silly audit   '@types/prop-types': [ '15.7.15' ],
+670 silly audit   '@types/react': [ '18.3.27' ],
+670 silly audit   '@types/react-dom': [ '18.3.7' ],
+670 silly audit   '@types/ws': [ '8.18.1' ],
+670 silly audit   '@typescript-eslint/eslint-plugin': [ '8.51.0' ],
+670 silly audit   ignore: [ '7.0.5', '5.3.2' ],
+670 silly audit   '@typescript-eslint/parser': [ '8.51.0' ],
+670 silly audit   '@typescript-eslint/project-service': [ '8.51.0' ],
+670 silly audit   '@typescript-eslint/scope-manager': [ '8.51.0' ],
+670 silly audit   '@typescript-eslint/tsconfig-utils': [ '8.51.0' ],
+670 silly audit   '@typescript-eslint/type-utils': [ '8.51.0' ],
+670 silly audit   '@typescript-eslint/types': [ '8.51.0' ],
+670 silly audit   '@typescript-eslint/typescript-estree': [ '8.51.0' ],
+670 silly audit   'brace-expansion': [ '2.0.2', '1.1.12' ],
+670 silly audit   minimatch: [ '9.0.5', '3.1.2' ],
+670 silly audit   '@typescript-eslint/utils': [ '8.51.0' ],
+670 silly audit   '@typescript-eslint/visitor-keys': [ '8.51.0' ],
+670 silly audit   'eslint-visitor-keys': [ '4.2.1', '3.4.3' ],
+670 silly audit   '@ungap/structured-clone': [ '1.3.0' ],
+670 silly audit   '@unrs/resolver-binding-android-arm-eabi': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-android-arm64': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-darwin-arm64': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-darwin-x64': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-freebsd-x64': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-linux-arm-gnueabihf': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-linux-arm-musleabihf': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-linux-arm64-gnu': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-linux-arm64-musl': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-linux-ppc64-gnu': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-linux-riscv64-gnu': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-linux-riscv64-musl': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-linux-s390x-gnu': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-linux-x64-gnu': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-linux-x64-musl': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-wasm32-wasi': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-win32-arm64-msvc': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-win32-ia32-msvc': [ '1.11.1' ],
+670 silly audit   '@unrs/resolver-binding-win32-x64-msvc': [ '1.11.1' ],
+670 silly audit   acorn: [ '8.15.0' ],
+670 silly audit   'acorn-jsx': [ '5.3.2' ],
+670 silly audit   ajv: [ '6.12.6' ],
+670 silly audit   'ansi-regex': [ '5.0.1' ],
+670 silly audit   'ansi-styles': [ '4.3.0' ],
+670 silly audit   'any-promise': [ '1.3.0' ],
+670 silly audit   anymatch: [ '3.1.3' ],
+670 silly audit   arg: [ '5.0.2' ],
+670 silly audit   argparse: [ '2.0.1' ],
+670 silly audit   'aria-query': [ '5.3.2' ],
+670 silly audit   'array-buffer-byte-length': [ '1.0.2' ],
+670 silly audit   'array-includes': [ '3.1.9' ],
+670 silly audit   'array.prototype.findlast': [ '1.2.5' ],
+670 silly audit   'array.prototype.findlastindex': [ '1.2.6' ],
+670 silly audit   'array.prototype.flat': [ '1.3.3' ],
+670 silly audit   'array.prototype.flatmap': [ '1.3.3' ],
+670 silly audit   'array.prototype.tosorted': [ '1.1.4' ],
+670 silly audit   'arraybuffer.prototype.slice': [ '1.0.4' ],
+670 silly audit   'ast-types-flow': [ '0.0.8' ],
+670 silly audit   'async-function': [ '1.0.0' ],
+670 silly audit   autoprefixer: [ '10.4.23' ],
+670 silly audit   'available-typed-arrays': [ '1.0.7' ],
+670 silly audit   'axe-core': [ '4.11.0' ],
+670 silly audit   'axobject-query': [ '4.1.0' ],
+670 silly audit   'balanced-match': [ '1.0.2' ],
+670 silly audit   'baseline-browser-mapping': [ '2.9.11' ],
+670 silly audit   'binary-extensions': [ '2.3.0' ],
+670 silly audit   braces: [ '3.0.3' ],
+670 silly audit   browserslist: [ '4.28.1' ],
+670 silly audit   busboy: [ '1.6.0' ],
+670 silly audit   'call-bind': [ '1.0.8' ],
+670 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+670 silly audit   'call-bound': [ '1.0.4' ],
+670 silly audit   callsites: [ '3.1.0' ],
+670 silly audit   'camelcase-css': [ '2.0.1' ],
+670 silly audit   'caniuse-lite': [ '1.0.30001762' ],
+670 silly audit   chalk: [ '4.1.2' ],
+670 silly audit   chokidar: [ '3.6.0' ],
+670 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+670 silly audit   'client-only': [ '0.0.1' ],
+670 silly audit   'color-convert': [ '2.0.1' ],
+670 silly audit   'color-name': [ '1.1.4' ],
+670 silly audit   commander: [ '4.1.1' ],
+670 silly audit   'concat-map': [ '0.0.1' ],
+670 silly audit   'cross-spawn': [ '7.0.6' ],
+670 silly audit   cssesc: [ '3.0.0' ],
+670 silly audit   csstype: [ '3.2.3' ],
+670 silly audit   'damerau-levenshtein': [ '1.0.8' ],
+670 silly audit   'data-view-buffer': [ '1.0.2' ],
+670 silly audit   'data-view-byte-length': [ '1.0.2' ],
+670 silly audit   'data-view-byte-offset': [ '1.0.1' ],
+670 silly audit   debug: [ '4.4.3', '3.2.7' ],
+670 silly audit   'deep-is': [ '0.1.4' ],
+670 silly audit   'define-data-property': [ '1.1.4' ],
+670 silly audit   'define-properties': [ '1.2.1' ],
+670 silly audit   didyoumean: [ '1.2.2' ],
+670 silly audit   dlv: [ '1.1.3' ],
+670 silly audit   doctrine: [ '3.0.0', '2.1.0' ],
+670 silly audit   'dunder-proto': [ '1.0.1' ],
+670 silly audit   'electron-to-chromium': [ '1.5.267' ],
+670 silly audit   'emoji-regex': [ '9.2.2' ],
+670 silly audit   'es-abstract': [ '1.24.1' ],
+670 silly audit   'es-define-property': [ '1.0.1' ],
+670 silly audit   'es-errors': [ '1.3.0' ],
+670 silly audit   'es-iterator-helpers': [ '1.2.2' ],
+670 silly audit   'es-object-atoms': [ '1.1.1' ],
+670 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+670 silly audit   'es-shim-unscopables': [ '1.1.0' ],
+670 silly audit   'es-to-primitive': [ '1.3.0' ],
+670 silly audit   escalade: [ '3.2.0' ],
+670 silly audit   'escape-string-regexp': [ '4.0.0' ],
+670 silly audit   eslint: [ '8.57.1' ],
+670 silly audit   'eslint-config-next': [ '15.0.0' ],
+670 silly audit   'eslint-import-resolver-node': [ '0.3.9' ],
+670 silly audit   'eslint-import-resolver-typescript': [ '3.10.1' ],
+670 silly audit   'eslint-module-utils': [ '2.12.1' ],
+670 silly audit   'eslint-plugin-import': [ '2.32.0' ],
+670 silly audit   semver: [ '6.3.1', '7.7.3' ],
+670 silly audit   'eslint-plugin-jsx-a11y': [ '6.10.2' ],
+670 silly audit   'eslint-plugin-react': [ '7.37.5' ],
+670 silly audit   'eslint-plugin-react-hooks': [ '5.2.0' ],
+670 silly audit   resolve: [ '2.0.0-next.5', '1.22.11' ],
+670 silly audit   'eslint-scope': [ '7.2.2' ],
+670 silly audit   espree: [ '9.6.1' ],
+670 silly audit   esquery: [ '1.7.0' ],
+670 silly audit   esrecurse: [ '4.3.0' ],
+670 silly audit   estraverse: [ '5.3.0' ],
+670 silly audit   esutils: [ '2.0.3' ],
+670 silly audit   'fast-deep-equal': [ '3.1.3' ],
+670 silly audit   'fast-glob': [ '3.3.1', '3.3.3' ],
+670 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+670 silly audit   'fast-levenshtein': [ '2.0.6' ],
+670 silly audit   fastq: [ '1.20.1' ],
+670 silly audit   'file-entry-cache': [ '6.0.1' ],
+670 silly audit   'fill-range': [ '7.1.1' ],
+670 silly audit   'find-up': [ '5.0.0' ],
+670 silly audit   'flat-cache': [ '3.2.0' ],
+670 silly audit   flatted: [ '3.3.3' ],
+670 silly audit   'for-each': [ '0.3.5' ],
+670 silly audit   'fraction.js': [ '5.3.4' ],
+670 silly audit   'fs.realpath': [ '1.0.0' ],
+670 silly audit   fsevents: [ '2.3.3' ],
+670 silly audit   'function-bind': [ '1.1.2' ],
+670 silly audit   'function.prototype.name': [ '1.1.8' ],
+670 silly audit   'functions-have-names': [ '1.2.3' ],
+670 silly audit   'generator-function': [ '2.0.1' ],
+670 silly audit   'get-intrinsic': [ '1.3.0' ],
+670 silly audit   'get-proto': [ '1.0.1' ],
+670 silly audit   'get-symbol-description': [ '1.1.0' ],
+670 silly audit   'get-tsconfig': [ '4.13.0' ],
+670 silly audit   glob: [ '7.2.3' ],
+670 silly audit   globals: [ '13.24.0' ],
+670 silly audit   globalthis: [ '1.0.4' ],
+670 silly audit   gopd: [ '1.2.0' ],
+670 silly audit   'graceful-fs': [ '4.2.11' ],
+670 silly audit   graphemer: [ '1.4.0' ],
+670 silly audit   'has-bigints': [ '1.1.0' ],
+670 silly audit   'has-flag': [ '4.0.0' ],
+670 silly audit   'has-property-descriptors': [ '1.0.2' ],
+670 silly audit   'has-proto': [ '1.2.0' ],
+670 silly audit   'has-symbols': [ '1.1.0' ],
+670 silly audit   'has-tostringtag': [ '1.0.2' ],
+670 silly audit   hasown: [ '2.0.2' ],
+670 silly audit   'iceberg-js': [ '0.8.1' ],
+670 silly audit   'import-fresh': [ '3.3.1' ],
+670 silly audit   imurmurhash: [ '0.1.4' ],
+670 silly audit   inflight: [ '1.0.6' ],
+670 silly audit   inherits: [ '2.0.4' ],
+670 silly audit   'internal-slot': [ '1.1.0' ],
+670 silly audit   'is-array-buffer': [ '3.0.5' ],
+670 silly audit   'is-async-function': [ '2.1.1' ],
+670 silly audit   'is-bigint': [ '1.1.0' ],
+670 silly audit   'is-binary-path': [ '2.1.0' ],
+670 silly audit   'is-boolean-object': [ '1.2.2' ],
+670 silly audit   'is-bun-module': [ '2.0.0' ],
+670 silly audit   'is-callable': [ '1.2.7' ],
+670 silly audit   'is-core-module': [ '2.16.1' ],
+670 silly audit   'is-data-view': [ '1.0.2' ],
+670 silly audit   'is-date-object': [ '1.1.0' ],
+670 silly audit   'is-extglob': [ '2.1.1' ],
+670 silly audit   'is-finalizationregistry': [ '1.1.1' ],
+670 silly audit   'is-generator-function': [ '1.1.2' ],
+670 silly audit   'is-glob': [ '4.0.3' ],
+670 silly audit   'is-map': [ '2.0.3' ],
+670 silly audit   'is-negative-zero': [ '2.0.3' ],
+670 silly audit   'is-number': [ '7.0.0' ],
+670 silly audit   'is-number-object': [ '1.1.1' ],
+670 silly audit   'is-path-inside': [ '3.0.3' ],
+670 silly audit   'is-regex': [ '1.2.1' ],
+670 silly audit   'is-set': [ '2.0.3' ],
+670 silly audit   'is-shared-array-buffer': [ '1.0.4' ],
+670 silly audit   'is-string': [ '1.1.1' ],
+670 silly audit   'is-symbol': [ '1.1.1' ],
+670 silly audit   'is-typed-array': [ '1.1.15' ],
+670 silly audit   'is-weakmap': [ '2.0.2' ],
+670 silly audit   'is-weakref': [ '1.1.1' ],
+670 silly audit   'is-weakset': [ '2.0.4' ],
+670 silly audit   isarray: [ '2.0.5' ],
+670 silly audit   isexe: [ '2.0.0' ],
+670 silly audit   'iterator.prototype': [ '1.1.5' ],
+670 silly audit   jiti: [ '1.21.7' ],
+670 silly audit   jose: [ '4.15.9' ],
+670 silly audit   'js-tokens': [ '4.0.0' ],
+670 silly audit   'js-yaml': [ '4.1.1' ],
+670 silly audit   'json-buffer': [ '3.0.1' ],
+670 silly audit   'json-schema-traverse': [ '0.4.1' ],
+670 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+670 silly audit   json5: [ '1.0.2' ],
+670 silly audit   'jsx-ast-utils': [ '3.3.5' ],
+670 silly audit   keyv: [ '4.5.4' ],
+670 silly audit   'language-subtag-registry': [ '0.3.23' ],
+670 silly audit   'language-tags': [ '1.0.9' ],
+670 silly audit   levn: [ '0.4.1' ],
+670 silly audit   lilconfig: [ '3.1.3' ],
+670 silly audit   'lines-and-columns': [ '1.2.4' ],
+670 silly audit   'locate-path': [ '6.0.0' ],
+670 silly audit   'lodash.merge': [ '4.6.2' ],
+670 silly audit   'loose-envify': [ '1.4.0' ],
+670 silly audit   'math-intrinsics': [ '1.1.0' ],
+670 silly audit   merge2: [ '1.4.1' ],
+670 silly audit   micromatch: [ '4.0.8' ],
+670 silly audit   minimist: [ '1.2.8' ],
+670 silly audit   ms: [ '2.1.3' ],
+670 silly audit   mz: [ '2.7.0' ],
+670 silly audit   nanoid: [ '3.3.11' ],
+670 silly audit   'napi-postinstall': [ '0.3.4' ],
+670 silly audit   'natural-compare': [ '1.4.0' ],
+670 silly audit   next: [ '14.2.35' ],
+670 silly audit   postcss: [ '8.4.31', '8.5.6' ],
+670 silly audit   'node-releases': [ '2.0.27' ],
+670 silly audit   'normalize-path': [ '3.0.0' ],
+670 silly audit   'object-assign': [ '4.1.1' ],
+670 silly audit   'object-hash': [ '3.0.0' ],
+670 silly audit   'object-inspect': [ '1.13.4' ],
+670 silly audit   'object-keys': [ '1.1.1' ],
+670 silly audit   'object.assign': [ '4.1.7' ],
+670 silly audit   'object.entries': [ '1.1.9' ],
+670 silly audit   'object.fromentries': [ '2.0.8' ],
+670 silly audit   'object.groupby': [ '1.0.3' ],
+670 silly audit   'object.values': [ '1.2.1' ],
+670 silly audit   once: [ '1.4.0' ],
+670 silly audit   optionator: [ '0.9.4' ],
+670 silly audit   'own-keys': [ '1.0.1' ],
+670 silly audit   'p-limit': [ '3.1.0' ],
+670 silly audit   'p-locate': [ '5.0.0' ],
+670 silly audit   'parent-module': [ '1.0.1' ],
+670 silly audit   'path-exists': [ '4.0.0' ],
+670 silly audit   'path-is-absolute': [ '1.0.1' ],
+670 silly audit   'path-key': [ '3.1.1' ],
+670 silly audit   'path-parse': [ '1.0.7' ],
+670 silly audit   picocolors: [ '1.1.1' ],
+670 silly audit   picomatch: [ '2.3.1', '4.0.3' ],
+670 silly audit   pify: [ '2.3.0' ],
+670 silly audit   pirates: [ '4.0.7' ],
+670 silly audit   'possible-typed-array-names': [ '1.1.0' ],
+670 silly audit   'postcss-import': [ '15.1.0' ],
+670 silly audit   'postcss-js': [ '4.1.0' ],
+670 silly audit   'postcss-load-config': [ '6.0.1' ],
+670 silly audit   'postcss-nested': [ '6.2.0' ],
+670 silly audit   'postcss-selector-parser': [ '6.1.2' ],
+670 silly audit   'postcss-value-parser': [ '4.2.0' ],
+670 silly audit   'prelude-ls': [ '1.2.1' ],
+670 silly audit   prettier: [ '3.7.4' ],
+670 silly audit   'prettier-plugin-tailwindcss': [ '0.6.14' ],
+670 silly audit   'prop-types': [ '15.8.1' ],
+670 silly audit   punycode: [ '2.3.1' ],
+670 silly audit   'queue-microtask': [ '1.2.3' ],
+670 silly audit   react: [ '18.3.1' ],
+670 silly audit   'react-dom': [ '18.3.1' ],
+670 silly audit   'react-is': [ '16.13.1', '18.3.1' ],
+670 silly audit   'read-cache': [ '1.0.0' ],
+670 silly audit   readdirp: [ '3.6.0' ],
+670 silly audit   'reflect.getprototypeof': [ '1.0.10' ],
+670 silly audit   'regexp.prototype.flags': [ '1.5.4' ],
+670 silly audit   'resolve-from': [ '4.0.0' ],
+670 silly audit   'resolve-pkg-maps': [ '1.0.0' ],
+670 silly audit   reusify: [ '1.1.0' ],
+670 silly audit   rimraf: [ '3.0.2' ],
+670 silly audit   'run-parallel': [ '1.2.0' ],
+670 silly audit   'safe-array-concat': [ '1.1.3' ],
+670 silly audit   'safe-push-apply': [ '1.0.0' ],
+670 silly audit   'safe-regex-test': [ '1.1.0' ],
+670 silly audit   scheduler: [ '0.23.2' ],
+670 silly audit   'set-cookie-parser': [ '2.7.2' ],
+670 silly audit   'set-function-length': [ '1.2.2' ],
+670 silly audit   'set-function-name': [ '2.0.2' ],
+670 silly audit   'set-proto': [ '1.0.0' ],
+670 silly audit   'shebang-command': [ '2.0.0' ],
+670 silly audit   'shebang-regex': [ '3.0.0' ],
+670 silly audit   'side-channel': [ '1.1.0' ],
+670 silly audit   'side-channel-list': [ '1.0.0' ],
+670 silly audit   'side-channel-map': [ '1.0.1' ],
+670 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+670 silly audit   'source-map-js': [ '1.2.1' ],
+670 silly audit   'stable-hash': [ '0.0.5' ],
+670 silly audit   'stop-iteration-iterator': [ '1.1.0' ],
+670 silly audit   streamsearch: [ '1.1.0' ],
+670 silly audit   'string.prototype.includes': [ '2.0.1' ],
+670 silly audit   'string.prototype.matchall': [ '4.0.12' ],
+670 silly audit   'string.prototype.repeat': [ '1.0.0' ],
+670 silly audit   'string.prototype.trim': [ '1.2.10' ],
+670 silly audit   'string.prototype.trimend': [ '1.0.9' ],
+670 silly audit   'string.prototype.trimstart': [ '1.0.8' ],
+670 silly audit   'strip-ansi': [ '6.0.1' ],
+670 silly audit   'strip-bom': [ '3.0.0' ],
+670 silly audit   'strip-json-comments': [ '3.1.1' ],
+670 silly audit   'styled-jsx': [ '5.1.1' ],
+670 silly audit   sucrase: [ '3.35.1' ],
+670 silly audit   'supports-color': [ '7.2.0' ],
+670 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+670 silly audit   tailwindcss: [ '3.4.19' ],
+670 silly audit   'text-table': [ '0.2.0' ],
+670 silly audit   thenify: [ '3.3.1' ],
+670 silly audit   'thenify-all': [ '1.6.0' ],
+670 silly audit   tinyglobby: [ '0.2.15' ],
+670 silly audit   fdir: [ '6.5.0' ],
+670 silly audit   'to-regex-range': [ '5.0.1' ],
+670 silly audit   'ts-api-utils': [ '2.4.0' ],
+670 silly audit   'ts-interface-checker': [ '0.1.13' ],
+670 silly audit   'tsconfig-paths': [ '3.15.0' ],
+670 silly audit   tslib: [ '2.8.1' ],
+670 silly audit   'type-check': [ '0.4.0' ],
+670 silly audit   'type-fest': [ '0.20.2' ],
+670 silly audit   'typed-array-buffer': [ '1.0.3' ],
+670 silly audit   'typed-array-byte-length': [ '1.0.3' ],
+670 silly audit   'typed-array-byte-offset': [ '1.0.4' ],
+670 silly audit   'typed-array-length': [ '1.0.7' ],
+670 silly audit   typescript: [ '5.9.3' ],
+670 silly audit   'unbox-primitive': [ '1.1.0' ],
+670 silly audit   'undici-types': [ '6.21.0' ],
+670 silly audit   'unrs-resolver': [ '1.11.1' ],
+670 silly audit   'update-browserslist-db': [ '1.2.3' ],
+670 silly audit   'uri-js': [ '4.4.1' ],
+670 silly audit   'util-deprecate': [ '1.0.2' ],
+670 silly audit   which: [ '2.0.2' ],
+670 silly audit   'which-boxed-primitive': [ '1.1.1' ],
+670 silly audit   'which-builtin-type': [ '1.2.1' ],
+670 silly audit   'which-collection': [ '1.0.2' ],
+670 silly audit   'which-typed-array': [ '1.1.19' ],
+670 silly audit   'word-wrap': [ '1.2.5' ],
+670 silly audit   wrappy: [ '1.0.2' ],
+670 silly audit   ws: [ '8.18.3' ],
+670 silly audit   'yocto-queue': [ '0.1.0' ],
+670 silly audit   '@dnd-kit/core': [ '6.3.1' ],
+670 silly audit   '@dnd-kit/modifiers': [ '9.0.0' ],
+670 silly audit   '@dnd-kit/sortable': [ '10.0.0' ],
+670 silly audit   '@dnd-kit/utilities': [ '3.2.2' ],
+670 silly audit   '@radix-ui/react-avatar': [ '1.1.11' ],
+670 silly audit   '@radix-ui/react-checkbox': [ '1.3.3' ],
+670 silly audit   '@radix-ui/react-dialog': [ '1.1.15' ],
+670 silly audit   '@radix-ui/react-dropdown-menu': [ '2.1.16' ],
+670 silly audit   '@radix-ui/react-label': [ '2.1.8' ],
+670 silly audit   '@radix-ui/react-select': [ '2.2.6' ],
+670 silly audit   '@radix-ui/react-separator': [ '1.1.8' ],
+670 silly audit   '@radix-ui/react-slot': [ '1.2.4', '1.2.3' ],
+670 silly audit   '@radix-ui/react-tabs': [ '1.1.13' ],
+670 silly audit   '@radix-ui/react-toggle': [ '1.1.10' ],
+670 silly audit   '@radix-ui/react-toggle-group': [ '1.1.11' ],
+670 silly audit   '@radix-ui/react-tooltip': [ '1.2.8' ],
+670 silly audit   '@tanstack/react-table': [ '8.21.3' ],
+670 silly audit   'class-variance-authority': [ '0.7.1' ],
+670 silly audit   'lucide-react': [ '0.562.0' ],
+670 silly audit   'next-themes': [ '0.4.6' ],
+670 silly audit   recharts: [ '2.15.4' ],
+670 silly audit   sonner: [ '2.0.7' ],
+670 silly audit   vaul: [ '1.1.2' ],
+670 silly audit   zod: [ '4.3.5' ],
+670 silly audit   '@dnd-kit/accessibility': [ '3.1.1' ],
+670 silly audit   '@radix-ui/react-context': [ '1.1.3', '1.1.2' ],
+670 silly audit   '@radix-ui/react-primitive': [ '2.1.4', '2.1.3' ],
+670 silly audit   '@radix-ui/react-use-callback-ref': [ '1.1.1' ],
+670 silly audit   '@radix-ui/react-use-is-hydrated': [ '0.1.0' ],
+670 silly audit   '@radix-ui/react-use-layout-effect': [ '1.1.1' ],
+670 silly audit   '@radix-ui/primitive': [ '1.1.3' ],
+670 silly audit   '@radix-ui/react-compose-refs': [ '1.1.2' ],
+670 silly audit   '@radix-ui/react-presence': [ '1.1.5' ],
+670 silly audit   '@radix-ui/react-use-controllable-state': [ '1.2.2' ],
+670 silly audit   '@radix-ui/react-use-previous': [ '1.1.1' ],
+670 silly audit   '@radix-ui/react-use-size': [ '1.1.1' ],
+670 silly audit   '@radix-ui/react-dismissable-layer': [ '1.1.11' ],
+670 silly audit   '@radix-ui/react-focus-guards': [ '1.1.3' ],
+670 silly audit   '@radix-ui/react-focus-scope': [ '1.1.7' ],
+670 silly audit   '@radix-ui/react-id': [ '1.1.1' ],
+670 silly audit   '@radix-ui/react-portal': [ '1.1.9' ],
+670 silly audit   'aria-hidden': [ '1.2.6' ],
+670 silly audit   'react-remove-scroll': [ '2.7.2' ],
+670 silly audit   '@radix-ui/react-use-escape-keydown': [ '1.1.1' ],
+670 silly audit   '@radix-ui/react-menu': [ '2.1.16' ],
+670 silly audit   '@radix-ui/react-collection': [ '1.1.7' ],
+670 silly audit   '@radix-ui/react-direction': [ '1.1.1' ],
+670 silly audit   '@radix-ui/react-popper': [ '1.2.8' ],
+670 silly audit   '@radix-ui/react-roving-focus': [ '1.1.11' ],
+670 silly audit   '@floating-ui/react-dom': [ '2.1.6' ],
+670 silly audit   '@radix-ui/react-arrow': [ '1.1.7' ],
+670 silly audit   '@radix-ui/react-use-rect': [ '1.1.1' ],
+670 silly audit   '@radix-ui/rect': [ '1.1.1' ],
+670 silly audit   '@floating-ui/dom': [ '1.7.4' ],
+670 silly audit   '@floating-ui/core': [ '1.7.3' ],
+670 silly audit   '@floating-ui/utils': [ '0.2.10' ],
+670 silly audit   '@radix-ui/number': [ '1.1.1' ],
+670 silly audit   '@radix-ui/react-visually-hidden': [ '1.2.3' ],
+670 silly audit   '@radix-ui/react-use-effect-event': [ '0.0.2' ],
+670 silly audit   'use-sync-external-store': [ '1.6.0' ],
+670 silly audit   '@tanstack/table-core': [ '8.21.3' ],
+670 silly audit   clsx: [ '2.1.1' ],
+670 silly audit   'react-remove-scroll-bar': [ '2.3.8' ],
+670 silly audit   'react-style-singleton': [ '2.2.3' ],
+670 silly audit   'use-callback-ref': [ '1.3.3' ],
+670 silly audit   'use-sidecar': [ '1.1.3' ],
+670 silly audit   'get-nonce': [ '1.0.1' ],
+670 silly audit   eventemitter3: [ '4.0.7' ],
+670 silly audit   lodash: [ '4.17.21' ],
+670 silly audit   'react-smooth': [ '4.0.4' ],
+670 silly audit   'recharts-scale': [ '0.4.5' ],
+670 silly audit   'tiny-invariant': [ '1.3.3' ],
+670 silly audit   'victory-vendor': [ '36.9.2' ],
+670 silly audit   'fast-equals': [ '5.4.0' ],
+670 silly audit   'react-transition-group': [ '4.4.5' ],
+670 silly audit   '@babel/runtime': [ '7.28.4' ],
+670 silly audit   'dom-helpers': [ '5.2.1' ],
+670 silly audit   'decimal.js-light': [ '2.5.1' ],
+670 silly audit   'detect-node-es': [ '1.1.0' ],
+670 silly audit   '@types/d3-array': [ '3.2.2' ],
+670 silly audit   '@types/d3-ease': [ '3.0.2' ],
+670 silly audit   '@types/d3-interpolate': [ '3.0.4' ],
+670 silly audit   '@types/d3-scale': [ '4.0.9' ],
+670 silly audit   '@types/d3-shape': [ '3.1.7' ],
+670 silly audit   '@types/d3-time': [ '3.0.4' ],
+670 silly audit   '@types/d3-timer': [ '3.0.2' ],
+670 silly audit   'd3-array': [ '3.2.4' ],
+670 silly audit   'd3-ease': [ '3.0.1' ],
+670 silly audit   'd3-interpolate': [ '3.0.1' ],
+670 silly audit   'd3-scale': [ '4.0.2' ],
+670 silly audit   'd3-shape': [ '3.2.0' ],
+670 silly audit   'd3-time': [ '3.1.0' ],
+670 silly audit   'd3-timer': [ '3.0.1' ],
+670 silly audit   '@types/d3-color': [ '3.1.3' ],
+670 silly audit   '@types/d3-path': [ '3.1.1' ],
+670 silly audit   internmap: [ '2.0.3' ],
+670 silly audit   'd3-color': [ '3.1.0' ],
+670 silly audit   'd3-format': [ '3.1.0' ],
+670 silly audit   'd3-time-format': [ '4.1.0' ],
+670 silly audit   'd3-path': [ '3.1.0' ]
+670 silly audit }
+671 http cache d3-color@https://registry.npmjs.org/d3-color/-/d3-color-3.1.0.tgz 0ms (cache hit)
+672 http cache d3-path@https://registry.npmjs.org/d3-path/-/d3-path-3.1.0.tgz 0ms (cache hit)
+673 http cache internmap@https://registry.npmjs.org/internmap/-/internmap-2.0.3.tgz 0ms (cache hit)
+674 http cache @types/d3-path@https://registry.npmjs.org/@types/d3-path/-/d3-path-3.1.1.tgz 0ms (cache hit)
+675 http cache @types/d3-color@https://registry.npmjs.org/@types/d3-color/-/d3-color-3.1.3.tgz 0ms (cache hit)
+676 http cache d3-timer@https://registry.npmjs.org/d3-timer/-/d3-timer-3.0.1.tgz 0ms (cache hit)
+677 http cache d3-format@https://registry.npmjs.org/d3-format/-/d3-format-3.1.0.tgz 0ms (cache hit)
+678 http cache d3-time@https://registry.npmjs.org/d3-time/-/d3-time-3.1.0.tgz 0ms (cache hit)
+679 http cache d3-shape@https://registry.npmjs.org/d3-shape/-/d3-shape-3.2.0.tgz 0ms (cache hit)
+680 http cache d3-interpolate@https://registry.npmjs.org/d3-interpolate/-/d3-interpolate-3.0.1.tgz 0ms (cache hit)
+681 http cache d3-ease@https://registry.npmjs.org/d3-ease/-/d3-ease-3.0.1.tgz 0ms (cache hit)
+682 http cache d3-scale@https://registry.npmjs.org/d3-scale/-/d3-scale-4.0.2.tgz 0ms (cache hit)
+683 http cache d3-array@https://registry.npmjs.org/d3-array/-/d3-array-3.2.4.tgz 0ms (cache hit)
+684 http cache d3-time-format@https://registry.npmjs.org/d3-time-format/-/d3-time-format-4.1.0.tgz 0ms (cache hit)
+685 http cache @types/d3-timer@https://registry.npmjs.org/@types/d3-timer/-/d3-timer-3.0.2.tgz 0ms (cache hit)
+686 http cache @types/d3-shape@https://registry.npmjs.org/@types/d3-shape/-/d3-shape-3.1.7.tgz 0ms (cache hit)
+687 http cache @types/d3-scale@https://registry.npmjs.org/@types/d3-scale/-/d3-scale-4.0.9.tgz 0ms (cache hit)
+688 http cache @types/d3-interpolate@https://registry.npmjs.org/@types/d3-interpolate/-/d3-interpolate-3.0.4.tgz 0ms (cache hit)
+689 http cache @types/d3-array@https://registry.npmjs.org/@types/d3-array/-/d3-array-3.2.2.tgz 0ms (cache hit)
+690 http cache detect-node-es@https://registry.npmjs.org/detect-node-es/-/detect-node-es-1.1.0.tgz 0ms (cache hit)
+691 http cache decimal.js-light@https://registry.npmjs.org/decimal.js-light/-/decimal.js-light-2.5.1.tgz 0ms (cache hit)
+692 http cache dom-helpers@https://registry.npmjs.org/dom-helpers/-/dom-helpers-5.2.1.tgz 0ms (cache hit)
+693 http cache @types/d3-ease@https://registry.npmjs.org/@types/d3-ease/-/d3-ease-3.0.2.tgz 0ms (cache hit)
+694 http cache @babel/runtime@https://registry.npmjs.org/@babel/runtime/-/runtime-7.28.4.tgz 0ms (cache hit)
+695 http cache fast-equals@https://registry.npmjs.org/fast-equals/-/fast-equals-5.4.0.tgz 0ms (cache hit)
+696 http cache victory-vendor@https://registry.npmjs.org/victory-vendor/-/victory-vendor-36.9.2.tgz 0ms (cache hit)
+697 http cache react-transition-group@https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.5.tgz 0ms (cache hit)
+698 http cache tiny-invariant@https://registry.npmjs.org/tiny-invariant/-/tiny-invariant-1.3.3.tgz 0ms (cache hit)
+699 http cache react-smooth@https://registry.npmjs.org/react-smooth/-/react-smooth-4.0.4.tgz 0ms (cache hit)
+700 http cache lodash@https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz 0ms (cache hit)
+701 http cache eventemitter3@https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz 0ms (cache hit)
+702 http cache get-nonce@https://registry.npmjs.org/get-nonce/-/get-nonce-1.0.1.tgz 0ms (cache hit)
+703 http cache @types/d3-time@https://registry.npmjs.org/@types/d3-time/-/d3-time-3.0.4.tgz 0ms (cache hit)
+704 http cache use-sidecar@https://registry.npmjs.org/use-sidecar/-/use-sidecar-1.1.3.tgz 0ms (cache hit)
+705 http cache react-style-singleton@https://registry.npmjs.org/react-style-singleton/-/react-style-singleton-2.2.3.tgz 0ms (cache hit)
+706 http cache use-callback-ref@https://registry.npmjs.org/use-callback-ref/-/use-callback-ref-1.3.3.tgz 0ms (cache hit)
+707 http cache react-remove-scroll-bar@https://registry.npmjs.org/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.8.tgz 0ms (cache hit)
+708 http cache clsx@https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz 0ms (cache hit)
+709 http cache @tanstack/table-core@https://registry.npmjs.org/@tanstack/table-core/-/table-core-8.21.3.tgz 0ms (cache hit)
+710 http cache use-sync-external-store@https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.6.0.tgz 0ms (cache hit)
+711 http cache @radix-ui/react-use-effect-event@https://registry.npmjs.org/@radix-ui/react-use-effect-event/-/react-use-effect-event-0.0.2.tgz 0ms (cache hit)
+712 http cache recharts-scale@https://registry.npmjs.org/recharts-scale/-/recharts-scale-0.4.5.tgz 0ms (cache hit)
+713 http cache @radix-ui/react-visually-hidden@https://registry.npmjs.org/@radix-ui/react-visually-hidden/-/react-visually-hidden-1.2.3.tgz 0ms (cache hit)
+714 http cache @radix-ui/number@https://registry.npmjs.org/@radix-ui/number/-/number-1.1.1.tgz 0ms (cache hit)
+715 http cache @floating-ui/utils@https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.10.tgz 0ms (cache hit)
+716 http cache @floating-ui/core@https://registry.npmjs.org/@floating-ui/core/-/core-1.7.3.tgz 0ms (cache hit)
+717 http cache @floating-ui/dom@https://registry.npmjs.org/@floating-ui/dom/-/dom-1.7.4.tgz 0ms (cache hit)
+718 http cache @radix-ui/react-use-rect@https://registry.npmjs.org/@radix-ui/react-use-rect/-/react-use-rect-1.1.1.tgz 0ms (cache hit)
+719 http cache @radix-ui/react-arrow@https://registry.npmjs.org/@radix-ui/react-arrow/-/react-arrow-1.1.7.tgz 0ms (cache hit)
+720 http cache @floating-ui/react-dom@https://registry.npmjs.org/@floating-ui/react-dom/-/react-dom-2.1.6.tgz 0ms (cache hit)
+721 http cache @radix-ui/react-roving-focus@https://registry.npmjs.org/@radix-ui/react-roving-focus/-/react-roving-focus-1.1.11.tgz 0ms (cache hit)
+722 http cache @radix-ui/react-popper@https://registry.npmjs.org/@radix-ui/react-popper/-/react-popper-1.2.8.tgz 0ms (cache hit)
+723 http cache @radix-ui/react-direction@https://registry.npmjs.org/@radix-ui/react-direction/-/react-direction-1.1.1.tgz 0ms (cache hit)
+724 http cache @radix-ui/react-collection@https://registry.npmjs.org/@radix-ui/react-collection/-/react-collection-1.1.7.tgz 0ms (cache hit)
+725 http cache @radix-ui/rect@https://registry.npmjs.org/@radix-ui/rect/-/rect-1.1.1.tgz 0ms (cache hit)
+726 http cache @radix-ui/react-use-escape-keydown@https://registry.npmjs.org/@radix-ui/react-use-escape-keydown/-/react-use-escape-keydown-1.1.1.tgz 0ms (cache hit)
+727 http cache @radix-ui/react-menu@https://registry.npmjs.org/@radix-ui/react-menu/-/react-menu-2.1.16.tgz 0ms (cache hit)
+728 http cache react-remove-scroll@https://registry.npmjs.org/react-remove-scroll/-/react-remove-scroll-2.7.2.tgz 0ms (cache hit)
+729 http cache aria-hidden@https://registry.npmjs.org/aria-hidden/-/aria-hidden-1.2.6.tgz 0ms (cache hit)
+730 http cache @radix-ui/react-portal@https://registry.npmjs.org/@radix-ui/react-portal/-/react-portal-1.1.9.tgz 0ms (cache hit)
+731 http cache @radix-ui/react-id@https://registry.npmjs.org/@radix-ui/react-id/-/react-id-1.1.1.tgz 0ms (cache hit)
+732 http cache @radix-ui/react-focus-scope@https://registry.npmjs.org/@radix-ui/react-focus-scope/-/react-focus-scope-1.1.7.tgz 0ms (cache hit)
+733 http cache @radix-ui/react-focus-guards@https://registry.npmjs.org/@radix-ui/react-focus-guards/-/react-focus-guards-1.1.3.tgz 0ms (cache hit)
+734 http cache @radix-ui/react-use-size@https://registry.npmjs.org/@radix-ui/react-use-size/-/react-use-size-1.1.1.tgz 0ms (cache hit)
+735 http cache @radix-ui/react-use-previous@https://registry.npmjs.org/@radix-ui/react-use-previous/-/react-use-previous-1.1.1.tgz 0ms (cache hit)
+736 http cache @radix-ui/react-use-controllable-state@https://registry.npmjs.org/@radix-ui/react-use-controllable-state/-/react-use-controllable-state-1.2.2.tgz 0ms (cache hit)
+737 http cache @radix-ui/react-dismissable-layer@https://registry.npmjs.org/@radix-ui/react-dismissable-layer/-/react-dismissable-layer-1.1.11.tgz 0ms (cache hit)
+738 http cache @radix-ui/react-presence@https://registry.npmjs.org/@radix-ui/react-presence/-/react-presence-1.1.5.tgz 0ms (cache hit)
+739 http cache @radix-ui/react-use-layout-effect@https://registry.npmjs.org/@radix-ui/react-use-layout-effect/-/react-use-layout-effect-1.1.1.tgz 0ms (cache hit)
+740 http cache @radix-ui/primitive@https://registry.npmjs.org/@radix-ui/primitive/-/primitive-1.1.3.tgz 0ms (cache hit)
+741 http cache @radix-ui/react-use-is-hydrated@https://registry.npmjs.org/@radix-ui/react-use-is-hydrated/-/react-use-is-hydrated-0.1.0.tgz 0ms (cache hit)
+742 http cache @radix-ui/react-use-callback-ref@https://registry.npmjs.org/@radix-ui/react-use-callback-ref/-/react-use-callback-ref-1.1.1.tgz 0ms (cache hit)
+743 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.4.tgz 0ms (cache hit)
+744 http cache @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.3.tgz 0ms (cache hit)
+745 http cache vaul@https://registry.npmjs.org/vaul/-/vaul-1.1.2.tgz 0ms (cache hit)
+746 http cache @radix-ui/react-compose-refs@https://registry.npmjs.org/@radix-ui/react-compose-refs/-/react-compose-refs-1.1.2.tgz 0ms (cache hit)
+747 http cache sonner@https://registry.npmjs.org/sonner/-/sonner-2.0.7.tgz 0ms (cache hit)
+748 http cache next-themes@https://registry.npmjs.org/next-themes/-/next-themes-0.4.6.tgz 0ms (cache hit)
+749 http cache lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-0.562.0.tgz 0ms (cache hit)
+750 http cache class-variance-authority@https://registry.npmjs.org/class-variance-authority/-/class-variance-authority-0.7.1.tgz 0ms (cache hit)
+751 http cache @tanstack/react-table@https://registry.npmjs.org/@tanstack/react-table/-/react-table-8.21.3.tgz 0ms (cache hit)
+752 http cache @radix-ui/react-tooltip@https://registry.npmjs.org/@radix-ui/react-tooltip/-/react-tooltip-1.2.8.tgz 0ms (cache hit)
+753 http cache @radix-ui/react-toggle-group@https://registry.npmjs.org/@radix-ui/react-toggle-group/-/react-toggle-group-1.1.11.tgz 0ms (cache hit)
+754 http cache @radix-ui/react-toggle@https://registry.npmjs.org/@radix-ui/react-toggle/-/react-toggle-1.1.10.tgz 0ms (cache hit)
+755 http cache @radix-ui/react-tabs@https://registry.npmjs.org/@radix-ui/react-tabs/-/react-tabs-1.1.13.tgz 0ms (cache hit)
+756 http cache zod@https://registry.npmjs.org/zod/-/zod-4.3.5.tgz 0ms (cache hit)
+757 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.4.tgz 0ms (cache hit)
+758 http cache @dnd-kit/accessibility@https://registry.npmjs.org/@dnd-kit/accessibility/-/accessibility-3.1.1.tgz 0ms (cache hit)
+759 http cache @radix-ui/react-separator@https://registry.npmjs.org/@radix-ui/react-separator/-/react-separator-1.1.8.tgz 0ms (cache hit)
+760 http cache recharts@https://registry.npmjs.org/recharts/-/recharts-2.15.4.tgz 0ms (cache hit)
+761 http cache @radix-ui/react-label@https://registry.npmjs.org/@radix-ui/react-label/-/react-label-2.1.8.tgz 0ms (cache hit)
+762 http cache @radix-ui/react-select@https://registry.npmjs.org/@radix-ui/react-select/-/react-select-2.2.6.tgz 0ms (cache hit)
+763 http cache @radix-ui/react-dialog@https://registry.npmjs.org/@radix-ui/react-dialog/-/react-dialog-1.1.15.tgz 0ms (cache hit)
+764 http cache @radix-ui/react-checkbox@https://registry.npmjs.org/@radix-ui/react-checkbox/-/react-checkbox-1.3.3.tgz 0ms (cache hit)
+765 http cache @radix-ui/react-avatar@https://registry.npmjs.org/@radix-ui/react-avatar/-/react-avatar-1.1.11.tgz 0ms (cache hit)
+766 http cache @dnd-kit/sortable@https://registry.npmjs.org/@dnd-kit/sortable/-/sortable-10.0.0.tgz 0ms (cache hit)
+767 http cache @dnd-kit/modifiers@https://registry.npmjs.org/@dnd-kit/modifiers/-/modifiers-9.0.0.tgz 0ms (cache hit)
+768 http cache @radix-ui/react-dropdown-menu@https://registry.npmjs.org/@radix-ui/react-dropdown-menu/-/react-dropdown-menu-2.1.16.tgz 0ms (cache hit)
+769 http cache @dnd-kit/utilities@https://registry.npmjs.org/@dnd-kit/utilities/-/utilities-3.2.2.tgz 0ms (cache hit)
+770 http cache @dnd-kit/core@https://registry.npmjs.org/@dnd-kit/core/-/core-6.3.1.tgz 0ms (cache hit)
+771 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+772 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+773 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+774 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+775 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+776 http cache @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 0ms (cache hit)
+777 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+778 http cache @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 0ms (cache hit)
+779 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+780 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+781 http cache @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 0ms (cache hit)
+782 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+783 http cache @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 0ms (cache hit)
+784 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+785 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+786 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+787 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+788 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+789 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+790 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+791 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+792 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+793 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+794 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+795 http cache @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 0ms (cache hit)
+796 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+797 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+798 http cache react-is@https://registry.npmjs.org/react-is/-/react-is-18.3.1.tgz 0ms (cache hit)
+799 http cache @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 0ms (cache hit)
+800 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+801 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+802 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+803 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+804 http cache @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 0ms (cache hit)
+805 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+806 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+807 http cache @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 0ms (cache hit)
+808 http cache @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 0ms (cache hit)
+809 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+810 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+811 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+812 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+813 http cache @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 0ms (cache hit)
+814 http cache @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 0ms (cache hit)
+815 http cache @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 0ms (cache hit)
+816 http cache @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 0ms (cache hit)
+817 silly tarball no local data for d3-color@https://registry.npmjs.org/d3-color/-/d3-color-3.1.0.tgz. Extracting by manifest.
+818 silly tarball no local data for d3-path@https://registry.npmjs.org/d3-path/-/d3-path-3.1.0.tgz. Extracting by manifest.
+819 silly tarball no local data for internmap@https://registry.npmjs.org/internmap/-/internmap-2.0.3.tgz. Extracting by manifest.
+820 silly tarball no local data for @types/d3-path@https://registry.npmjs.org/@types/d3-path/-/d3-path-3.1.1.tgz. Extracting by manifest.
+821 silly tarball no local data for @types/d3-color@https://registry.npmjs.org/@types/d3-color/-/d3-color-3.1.3.tgz. Extracting by manifest.
+822 silly tarball no local data for d3-timer@https://registry.npmjs.org/d3-timer/-/d3-timer-3.0.1.tgz. Extracting by manifest.
+823 silly tarball no local data for d3-format@https://registry.npmjs.org/d3-format/-/d3-format-3.1.0.tgz. Extracting by manifest.
+824 silly tarball no local data for d3-time@https://registry.npmjs.org/d3-time/-/d3-time-3.1.0.tgz. Extracting by manifest.
+825 silly tarball no local data for d3-shape@https://registry.npmjs.org/d3-shape/-/d3-shape-3.2.0.tgz. Extracting by manifest.
+826 silly tarball no local data for d3-interpolate@https://registry.npmjs.org/d3-interpolate/-/d3-interpolate-3.0.1.tgz. Extracting by manifest.
+827 silly tarball no local data for d3-ease@https://registry.npmjs.org/d3-ease/-/d3-ease-3.0.1.tgz. Extracting by manifest.
+828 silly tarball no local data for d3-scale@https://registry.npmjs.org/d3-scale/-/d3-scale-4.0.2.tgz. Extracting by manifest.
+829 silly tarball no local data for d3-array@https://registry.npmjs.org/d3-array/-/d3-array-3.2.4.tgz. Extracting by manifest.
+830 silly tarball no local data for d3-time-format@https://registry.npmjs.org/d3-time-format/-/d3-time-format-4.1.0.tgz. Extracting by manifest.
+831 silly tarball no local data for @types/d3-timer@https://registry.npmjs.org/@types/d3-timer/-/d3-timer-3.0.2.tgz. Extracting by manifest.
+832 silly tarball no local data for @types/d3-shape@https://registry.npmjs.org/@types/d3-shape/-/d3-shape-3.1.7.tgz. Extracting by manifest.
+833 silly tarball no local data for @types/d3-scale@https://registry.npmjs.org/@types/d3-scale/-/d3-scale-4.0.9.tgz. Extracting by manifest.
+834 silly tarball no local data for @types/d3-interpolate@https://registry.npmjs.org/@types/d3-interpolate/-/d3-interpolate-3.0.4.tgz. Extracting by manifest.
+835 silly tarball no local data for @types/d3-array@https://registry.npmjs.org/@types/d3-array/-/d3-array-3.2.2.tgz. Extracting by manifest.
+836 silly tarball no local data for detect-node-es@https://registry.npmjs.org/detect-node-es/-/detect-node-es-1.1.0.tgz. Extracting by manifest.
+837 silly tarball no local data for decimal.js-light@https://registry.npmjs.org/decimal.js-light/-/decimal.js-light-2.5.1.tgz. Extracting by manifest.
+838 silly tarball no local data for dom-helpers@https://registry.npmjs.org/dom-helpers/-/dom-helpers-5.2.1.tgz. Extracting by manifest.
+839 silly tarball no local data for @types/d3-ease@https://registry.npmjs.org/@types/d3-ease/-/d3-ease-3.0.2.tgz. Extracting by manifest.
+840 silly tarball no local data for @babel/runtime@https://registry.npmjs.org/@babel/runtime/-/runtime-7.28.4.tgz. Extracting by manifest.
+841 silly tarball no local data for fast-equals@https://registry.npmjs.org/fast-equals/-/fast-equals-5.4.0.tgz. Extracting by manifest.
+842 silly tarball no local data for victory-vendor@https://registry.npmjs.org/victory-vendor/-/victory-vendor-36.9.2.tgz. Extracting by manifest.
+843 silly tarball no local data for react-transition-group@https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.5.tgz. Extracting by manifest.
+844 silly tarball no local data for react-smooth@https://registry.npmjs.org/react-smooth/-/react-smooth-4.0.4.tgz. Extracting by manifest.
+845 silly tarball no local data for lodash@https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz. Extracting by manifest.
+846 silly tarball no local data for eventemitter3@https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz. Extracting by manifest.
+847 silly tarball no local data for get-nonce@https://registry.npmjs.org/get-nonce/-/get-nonce-1.0.1.tgz. Extracting by manifest.
+848 silly tarball no local data for @types/d3-time@https://registry.npmjs.org/@types/d3-time/-/d3-time-3.0.4.tgz. Extracting by manifest.
+849 silly tarball no local data for use-sidecar@https://registry.npmjs.org/use-sidecar/-/use-sidecar-1.1.3.tgz. Extracting by manifest.
+850 silly tarball no local data for react-style-singleton@https://registry.npmjs.org/react-style-singleton/-/react-style-singleton-2.2.3.tgz. Extracting by manifest.
+851 silly tarball no local data for use-callback-ref@https://registry.npmjs.org/use-callback-ref/-/use-callback-ref-1.3.3.tgz. Extracting by manifest.
+852 silly tarball no local data for react-remove-scroll-bar@https://registry.npmjs.org/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.8.tgz. Extracting by manifest.
+853 silly tarball no local data for clsx@https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz. Extracting by manifest.
+854 silly tarball no local data for @tanstack/table-core@https://registry.npmjs.org/@tanstack/table-core/-/table-core-8.21.3.tgz. Extracting by manifest.
+855 silly tarball no local data for use-sync-external-store@https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.6.0.tgz. Extracting by manifest.
+856 silly tarball no local data for @radix-ui/react-use-effect-event@https://registry.npmjs.org/@radix-ui/react-use-effect-event/-/react-use-effect-event-0.0.2.tgz. Extracting by manifest.
+857 silly tarball no local data for recharts-scale@https://registry.npmjs.org/recharts-scale/-/recharts-scale-0.4.5.tgz. Extracting by manifest.
+858 silly tarball no local data for @radix-ui/react-visually-hidden@https://registry.npmjs.org/@radix-ui/react-visually-hidden/-/react-visually-hidden-1.2.3.tgz. Extracting by manifest.
+859 silly tarball no local data for @radix-ui/number@https://registry.npmjs.org/@radix-ui/number/-/number-1.1.1.tgz. Extracting by manifest.
+860 silly tarball no local data for @floating-ui/utils@https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.10.tgz. Extracting by manifest.
+861 silly tarball no local data for @floating-ui/core@https://registry.npmjs.org/@floating-ui/core/-/core-1.7.3.tgz. Extracting by manifest.
+862 silly tarball no local data for @floating-ui/dom@https://registry.npmjs.org/@floating-ui/dom/-/dom-1.7.4.tgz. Extracting by manifest.
+863 silly tarball no local data for @radix-ui/react-use-rect@https://registry.npmjs.org/@radix-ui/react-use-rect/-/react-use-rect-1.1.1.tgz. Extracting by manifest.
+864 silly tarball no local data for @radix-ui/react-arrow@https://registry.npmjs.org/@radix-ui/react-arrow/-/react-arrow-1.1.7.tgz. Extracting by manifest.
+865 silly tarball no local data for @floating-ui/react-dom@https://registry.npmjs.org/@floating-ui/react-dom/-/react-dom-2.1.6.tgz. Extracting by manifest.
+866 silly tarball no local data for @radix-ui/react-roving-focus@https://registry.npmjs.org/@radix-ui/react-roving-focus/-/react-roving-focus-1.1.11.tgz. Extracting by manifest.
+867 silly tarball no local data for @radix-ui/react-popper@https://registry.npmjs.org/@radix-ui/react-popper/-/react-popper-1.2.8.tgz. Extracting by manifest.
+868 silly tarball no local data for @radix-ui/react-direction@https://registry.npmjs.org/@radix-ui/react-direction/-/react-direction-1.1.1.tgz. Extracting by manifest.
+869 silly tarball no local data for @radix-ui/react-collection@https://registry.npmjs.org/@radix-ui/react-collection/-/react-collection-1.1.7.tgz. Extracting by manifest.
+870 silly tarball no local data for @radix-ui/rect@https://registry.npmjs.org/@radix-ui/rect/-/rect-1.1.1.tgz. Extracting by manifest.
+871 silly tarball no local data for @radix-ui/react-use-escape-keydown@https://registry.npmjs.org/@radix-ui/react-use-escape-keydown/-/react-use-escape-keydown-1.1.1.tgz. Extracting by manifest.
+872 silly tarball no local data for @radix-ui/react-menu@https://registry.npmjs.org/@radix-ui/react-menu/-/react-menu-2.1.16.tgz. Extracting by manifest.
+873 silly tarball no local data for react-remove-scroll@https://registry.npmjs.org/react-remove-scroll/-/react-remove-scroll-2.7.2.tgz. Extracting by manifest.
+874 silly tarball no local data for aria-hidden@https://registry.npmjs.org/aria-hidden/-/aria-hidden-1.2.6.tgz. Extracting by manifest.
+875 silly tarball no local data for @radix-ui/react-portal@https://registry.npmjs.org/@radix-ui/react-portal/-/react-portal-1.1.9.tgz. Extracting by manifest.
+876 silly tarball no local data for @radix-ui/react-id@https://registry.npmjs.org/@radix-ui/react-id/-/react-id-1.1.1.tgz. Extracting by manifest.
+877 silly tarball no local data for @radix-ui/react-focus-scope@https://registry.npmjs.org/@radix-ui/react-focus-scope/-/react-focus-scope-1.1.7.tgz. Extracting by manifest.
+878 silly tarball no local data for @radix-ui/react-focus-guards@https://registry.npmjs.org/@radix-ui/react-focus-guards/-/react-focus-guards-1.1.3.tgz. Extracting by manifest.
+879 silly tarball no local data for @radix-ui/react-use-size@https://registry.npmjs.org/@radix-ui/react-use-size/-/react-use-size-1.1.1.tgz. Extracting by manifest.
+880 silly tarball no local data for @radix-ui/react-use-previous@https://registry.npmjs.org/@radix-ui/react-use-previous/-/react-use-previous-1.1.1.tgz. Extracting by manifest.
+881 silly tarball no local data for @radix-ui/react-use-controllable-state@https://registry.npmjs.org/@radix-ui/react-use-controllable-state/-/react-use-controllable-state-1.2.2.tgz. Extracting by manifest.
+882 silly tarball no local data for @radix-ui/react-dismissable-layer@https://registry.npmjs.org/@radix-ui/react-dismissable-layer/-/react-dismissable-layer-1.1.11.tgz. Extracting by manifest.
+883 silly tarball no local data for @radix-ui/react-presence@https://registry.npmjs.org/@radix-ui/react-presence/-/react-presence-1.1.5.tgz. Extracting by manifest.
+884 silly tarball no local data for @radix-ui/react-use-layout-effect@https://registry.npmjs.org/@radix-ui/react-use-layout-effect/-/react-use-layout-effect-1.1.1.tgz. Extracting by manifest.
+885 silly tarball no local data for @radix-ui/primitive@https://registry.npmjs.org/@radix-ui/primitive/-/primitive-1.1.3.tgz. Extracting by manifest.
+886 silly tarball no local data for @radix-ui/react-use-is-hydrated@https://registry.npmjs.org/@radix-ui/react-use-is-hydrated/-/react-use-is-hydrated-0.1.0.tgz. Extracting by manifest.
+887 silly tarball no local data for @radix-ui/react-use-callback-ref@https://registry.npmjs.org/@radix-ui/react-use-callback-ref/-/react-use-callback-ref-1.1.1.tgz. Extracting by manifest.
+888 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.4.tgz. Extracting by manifest.
+889 silly tarball no local data for @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.3.tgz. Extracting by manifest.
+890 silly tarball no local data for vaul@https://registry.npmjs.org/vaul/-/vaul-1.1.2.tgz. Extracting by manifest.
+891 silly tarball no local data for @radix-ui/react-compose-refs@https://registry.npmjs.org/@radix-ui/react-compose-refs/-/react-compose-refs-1.1.2.tgz. Extracting by manifest.
+892 silly tarball no local data for sonner@https://registry.npmjs.org/sonner/-/sonner-2.0.7.tgz. Extracting by manifest.
+893 silly tarball no local data for next-themes@https://registry.npmjs.org/next-themes/-/next-themes-0.4.6.tgz. Extracting by manifest.
+894 silly tarball no local data for lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-0.562.0.tgz. Extracting by manifest.
+895 silly tarball no local data for class-variance-authority@https://registry.npmjs.org/class-variance-authority/-/class-variance-authority-0.7.1.tgz. Extracting by manifest.
+896 silly tarball no local data for @tanstack/react-table@https://registry.npmjs.org/@tanstack/react-table/-/react-table-8.21.3.tgz. Extracting by manifest.
+897 silly tarball no local data for @radix-ui/react-tooltip@https://registry.npmjs.org/@radix-ui/react-tooltip/-/react-tooltip-1.2.8.tgz. Extracting by manifest.
+898 silly tarball no local data for @radix-ui/react-toggle-group@https://registry.npmjs.org/@radix-ui/react-toggle-group/-/react-toggle-group-1.1.11.tgz. Extracting by manifest.
+899 silly tarball no local data for @radix-ui/react-toggle@https://registry.npmjs.org/@radix-ui/react-toggle/-/react-toggle-1.1.10.tgz. Extracting by manifest.
+900 silly tarball no local data for @radix-ui/react-tabs@https://registry.npmjs.org/@radix-ui/react-tabs/-/react-tabs-1.1.13.tgz. Extracting by manifest.
+901 silly tarball no local data for zod@https://registry.npmjs.org/zod/-/zod-4.3.5.tgz. Extracting by manifest.
+902 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.4.tgz. Extracting by manifest.
+903 silly tarball no local data for @dnd-kit/accessibility@https://registry.npmjs.org/@dnd-kit/accessibility/-/accessibility-3.1.1.tgz. Extracting by manifest.
+904 silly tarball no local data for @radix-ui/react-separator@https://registry.npmjs.org/@radix-ui/react-separator/-/react-separator-1.1.8.tgz. Extracting by manifest.
+905 silly tarball no local data for recharts@https://registry.npmjs.org/recharts/-/recharts-2.15.4.tgz. Extracting by manifest.
+906 silly tarball no local data for @radix-ui/react-label@https://registry.npmjs.org/@radix-ui/react-label/-/react-label-2.1.8.tgz. Extracting by manifest.
+907 silly tarball no local data for @radix-ui/react-select@https://registry.npmjs.org/@radix-ui/react-select/-/react-select-2.2.6.tgz. Extracting by manifest.
+908 silly tarball no local data for @radix-ui/react-dialog@https://registry.npmjs.org/@radix-ui/react-dialog/-/react-dialog-1.1.15.tgz. Extracting by manifest.
+909 silly tarball no local data for @radix-ui/react-checkbox@https://registry.npmjs.org/@radix-ui/react-checkbox/-/react-checkbox-1.3.3.tgz. Extracting by manifest.
+910 silly tarball no local data for @radix-ui/react-avatar@https://registry.npmjs.org/@radix-ui/react-avatar/-/react-avatar-1.1.11.tgz. Extracting by manifest.
+911 silly tarball no local data for @dnd-kit/sortable@https://registry.npmjs.org/@dnd-kit/sortable/-/sortable-10.0.0.tgz. Extracting by manifest.
+912 silly tarball no local data for @dnd-kit/modifiers@https://registry.npmjs.org/@dnd-kit/modifiers/-/modifiers-9.0.0.tgz. Extracting by manifest.
+913 silly tarball no local data for @radix-ui/react-dropdown-menu@https://registry.npmjs.org/@radix-ui/react-dropdown-menu/-/react-dropdown-menu-2.1.16.tgz. Extracting by manifest.
+914 silly tarball no local data for @dnd-kit/utilities@https://registry.npmjs.org/@dnd-kit/utilities/-/utilities-3.2.2.tgz. Extracting by manifest.
+915 silly tarball no local data for @dnd-kit/core@https://registry.npmjs.org/@dnd-kit/core/-/core-6.3.1.tgz. Extracting by manifest.
+916 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+917 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+918 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+919 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+920 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+921 silly tarball no local data for @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz. Extracting by manifest.
+922 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+923 silly tarball no local data for @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz. Extracting by manifest.
+924 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+925 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+926 silly tarball no local data for @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz. Extracting by manifest.
+927 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+928 silly tarball no local data for @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz. Extracting by manifest.
+929 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+930 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+931 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+932 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+933 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+934 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+935 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+936 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+937 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+938 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+939 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+940 silly tarball no local data for @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz. Extracting by manifest.
+941 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+942 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+943 silly tarball no local data for react-is@https://registry.npmjs.org/react-is/-/react-is-18.3.1.tgz. Extracting by manifest.
+944 silly tarball no local data for @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz. Extracting by manifest.
+945 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+946 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+947 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+948 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+949 silly tarball no local data for @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz. Extracting by manifest.
+950 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+951 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+952 silly tarball no local data for @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz. Extracting by manifest.
+953 silly tarball no local data for @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz. Extracting by manifest.
+954 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+955 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+956 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+957 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+958 silly tarball no local data for @radix-ui/react-primitive@https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz. Extracting by manifest.
+959 silly tarball no local data for @radix-ui/react-slot@https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz. Extracting by manifest.
+960 silly tarball no local data for @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz. Extracting by manifest.
+961 silly tarball no local data for @radix-ui/react-context@https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz. Extracting by manifest.
+962 http fetch GET 200 https://registry.npmjs.org/internmap/-/internmap-2.0.3.tgz 56ms (cache miss)
+963 http fetch GET 200 https://registry.npmjs.org/d3-timer/-/d3-timer-3.0.1.tgz 64ms (cache miss)
+964 http fetch GET 200 https://registry.npmjs.org/d3-path/-/d3-path-3.1.0.tgz 69ms (cache miss)
+965 http fetch GET 200 https://registry.npmjs.org/d3-color/-/d3-color-3.1.0.tgz 73ms (cache miss)
+966 http fetch GET 200 https://registry.npmjs.org/@types/d3-color/-/d3-color-3.1.3.tgz 83ms (cache miss)
+967 http fetch GET 200 https://registry.npmjs.org/@types/d3-timer/-/d3-timer-3.0.2.tgz 112ms (cache miss)
+968 http fetch GET 200 https://registry.npmjs.org/@types/d3-shape/-/d3-shape-3.1.7.tgz 114ms (cache miss)
+969 http fetch GET 200 https://registry.npmjs.org/@types/d3-interpolate/-/d3-interpolate-3.0.4.tgz 122ms (cache miss)
+970 http fetch GET 200 https://registry.npmjs.org/@types/d3-scale/-/d3-scale-4.0.9.tgz 125ms (cache miss)
+971 http fetch GET 200 https://registry.npmjs.org/d3-time/-/d3-time-3.1.0.tgz 133ms (cache miss)
+972 http fetch GET 200 https://registry.npmjs.org/@types/d3-array/-/d3-array-3.2.2.tgz 169ms (cache miss)
+973 http fetch GET 200 https://registry.npmjs.org/detect-node-es/-/detect-node-es-1.1.0.tgz 170ms (cache miss)
+974 http fetch GET 200 https://registry.npmjs.org/d3-ease/-/d3-ease-3.0.1.tgz 183ms (cache miss)
+975 http fetch GET 200 https://registry.npmjs.org/decimal.js-light/-/decimal.js-light-2.5.1.tgz 186ms (cache miss)
+976 http fetch GET 200 https://registry.npmjs.org/@types/d3-ease/-/d3-ease-3.0.2.tgz 187ms (cache miss)
+977 http fetch GET 200 https://registry.npmjs.org/d3-interpolate/-/d3-interpolate-3.0.1.tgz 197ms (cache miss)
+978 http fetch GET 200 https://registry.npmjs.org/d3-scale/-/d3-scale-4.0.2.tgz 204ms (cache miss)
+979 http fetch GET 200 https://registry.npmjs.org/d3-time-format/-/d3-time-format-4.1.0.tgz 205ms (cache miss)
+980 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 237ms
+981 silly audit report {}
+982 http fetch GET 200 https://registry.npmjs.org/d3-shape/-/d3-shape-3.2.0.tgz 214ms (cache miss)
+983 http fetch GET 200 https://registry.npmjs.org/get-nonce/-/get-nonce-1.0.1.tgz 213ms (cache miss)
+984 http fetch GET 200 https://registry.npmjs.org/d3-format/-/d3-format-3.1.0.tgz 219ms (cache miss)
+985 http fetch GET 200 https://registry.npmjs.org/d3-array/-/d3-array-3.2.4.tgz 220ms (cache miss)
+986 http fetch GET 200 https://registry.npmjs.org/fast-equals/-/fast-equals-5.4.0.tgz 219ms (cache miss)
+987 http fetch GET 200 https://registry.npmjs.org/react-smooth/-/react-smooth-4.0.4.tgz 263ms (cache miss)
+988 http fetch GET 200 https://registry.npmjs.org/@types/d3-time/-/d3-time-3.0.4.tgz 262ms (cache miss)
+989 http fetch GET 200 https://registry.npmjs.org/react-style-singleton/-/react-style-singleton-2.2.3.tgz 267ms (cache miss)
+990 http fetch GET 200 https://registry.npmjs.org/use-callback-ref/-/use-callback-ref-1.3.3.tgz 267ms (cache miss)
+991 http fetch GET 200 https://registry.npmjs.org/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.8.tgz 267ms (cache miss)
+992 http fetch GET 200 https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz 268ms (cache miss)
+993 http fetch GET 200 https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz 271ms (cache miss)
+994 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-use-effect-event/-/react-use-effect-event-0.0.2.tgz 327ms (cache miss)
+995 http fetch GET 200 https://registry.npmjs.org/@types/d3-path/-/d3-path-3.1.1.tgz 368ms (cache miss)
+996 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-visually-hidden/-/react-visually-hidden-1.2.3.tgz 365ms (cache miss)
+997 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-use-rect/-/react-use-rect-1.1.1.tgz 365ms (cache miss)
+998 http fetch GET 200 https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.10.tgz 365ms (cache miss)
+999 http fetch GET 200 https://registry.npmjs.org/@radix-ui/number/-/number-1.1.1.tgz 366ms (cache miss)
+1000 http fetch GET 200 https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.6.0.tgz 367ms (cache miss)
+1001 http fetch GET 200 https://registry.npmjs.org/recharts-scale/-/recharts-scale-0.4.5.tgz 393ms (cache miss)
+1002 http fetch GET 200 https://registry.npmjs.org/@floating-ui/react-dom/-/react-dom-2.1.6.tgz 423ms (cache miss)
+1003 http fetch GET 200 https://registry.npmjs.org/@floating-ui/dom/-/dom-1.7.4.tgz 452ms (cache miss)
+1004 http fetch GET 200 https://registry.npmjs.org/use-sidecar/-/use-sidecar-1.1.3.tgz 454ms (cache miss)
+1005 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-popper/-/react-popper-1.2.8.tgz 457ms (cache miss)
+1006 http fetch GET 200 https://registry.npmjs.org/aria-hidden/-/aria-hidden-1.2.6.tgz 457ms (cache miss)
+1007 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-id/-/react-id-1.1.1.tgz 460ms (cache miss)
+1008 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-use-escape-keydown/-/react-use-escape-keydown-1.1.1.tgz 461ms (cache miss)
+1009 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-direction/-/react-direction-1.1.1.tgz 461ms (cache miss)
+1010 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-use-controllable-state/-/react-use-controllable-state-1.2.2.tgz 486ms (cache miss)
+1011 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-collection/-/react-collection-1.1.7.tgz 502ms (cache miss)
+1012 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-presence/-/react-presence-1.1.5.tgz 507ms (cache miss)
+1013 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-use-layout-effect/-/react-use-layout-effect-1.1.1.tgz 509ms (cache miss)
+1014 http fetch GET 200 https://registry.npmjs.org/@radix-ui/primitive/-/primitive-1.1.3.tgz 515ms (cache miss)
+1015 http fetch GET 200 https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.5.tgz 521ms (cache miss)
+1016 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-use-callback-ref/-/react-use-callback-ref-1.1.1.tgz 519ms (cache miss)
+1017 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-arrow/-/react-arrow-1.1.7.tgz 532ms (cache miss)
+1018 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.4.tgz 546ms (cache miss)
+1019 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.3.tgz 552ms (cache miss)
+1020 http fetch GET 200 https://registry.npmjs.org/vaul/-/vaul-1.1.2.tgz 561ms (cache miss)
+1021 http fetch GET 200 https://registry.npmjs.org/@babel/runtime/-/runtime-7.28.4.tgz 575ms (cache miss)
+1022 http fetch GET 200 https://registry.npmjs.org/react-remove-scroll/-/react-remove-scroll-2.7.2.tgz 574ms (cache miss)
+1023 http fetch GET 200 https://registry.npmjs.org/next-themes/-/next-themes-0.4.6.tgz 582ms (cache miss)
+1024 http fetch GET 200 https://registry.npmjs.org/sonner/-/sonner-2.0.7.tgz 603ms (cache miss)
+1025 http fetch GET 200 https://registry.npmjs.org/@radix-ui/rect/-/rect-1.1.1.tgz 640ms (cache miss)
+1026 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-compose-refs/-/react-compose-refs-1.1.2.tgz 720ms (cache miss)
+1027 http fetch GET 200 https://registry.npmjs.org/dom-helpers/-/dom-helpers-5.2.1.tgz 729ms (cache miss)
+1028 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-portal/-/react-portal-1.1.9.tgz 725ms (cache miss)
+1029 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-menu/-/react-menu-2.1.16.tgz 731ms (cache miss)
+1030 http fetch GET 200 https://registry.npmjs.org/class-variance-authority/-/class-variance-authority-0.7.1.tgz 750ms (cache miss)
+1031 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-use-size/-/react-use-size-1.1.1.tgz 758ms (cache miss)
+1032 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-use-previous/-/react-use-previous-1.1.1.tgz 759ms (cache miss)
+1033 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-focus-scope/-/react-focus-scope-1.1.7.tgz 768ms (cache miss)
+1034 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-tabs/-/react-tabs-1.1.13.tgz 772ms (cache miss)
+1035 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-toggle-group/-/react-toggle-group-1.1.11.tgz 776ms (cache miss)
+1036 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-use-is-hydrated/-/react-use-is-hydrated-0.1.0.tgz 805ms (cache miss)
+1037 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-dismissable-layer/-/react-dismissable-layer-1.1.11.tgz 808ms (cache miss)
+1038 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.4.tgz 829ms (cache miss)
+1039 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-focus-guards/-/react-focus-guards-1.1.3.tgz 882ms (cache miss)
+1040 http fetch GET 200 https://registry.npmjs.org/@floating-ui/core/-/core-1.7.3.tgz 884ms (cache miss)
+1041 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-dialog/-/react-dialog-1.1.15.tgz 942ms (cache miss)
+1042 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-tooltip/-/react-tooltip-1.2.8.tgz 970ms (cache miss)
+1043 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-avatar/-/react-avatar-1.1.11.tgz 972ms (cache miss)
+1044 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-separator/-/react-separator-1.1.8.tgz 1018ms (cache miss)
+1045 http fetch GET 200 https://registry.npmjs.org/victory-vendor/-/victory-vendor-36.9.2.tgz 1098ms (cache miss)
+1046 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-roving-focus/-/react-roving-focus-1.1.11.tgz 1195ms (cache miss)
+1047 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-dropdown-menu/-/react-dropdown-menu-2.1.16.tgz 1236ms (cache miss)
+1048 http fetch GET 200 https://registry.npmjs.org/@dnd-kit/utilities/-/utilities-3.2.2.tgz 1361ms (cache miss)
+1049 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-checkbox/-/react-checkbox-1.3.3.tgz 1400ms (cache miss)
+1050 http fetch GET 200 https://registry.npmjs.org/@tanstack/table-core/-/table-core-8.21.3.tgz 1412ms (cache miss)
+1051 http fetch GET 200 https://registry.npmjs.org/@dnd-kit/modifiers/-/modifiers-9.0.0.tgz 1437ms (cache miss)
+1052 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1444ms (cache miss)
+1053 http fetch GET 200 https://registry.npmjs.org/@tanstack/react-table/-/react-table-8.21.3.tgz 1450ms (cache miss)
+1054 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1451ms (cache miss)
+1055 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1585ms (cache miss)
+1056 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1586ms (cache miss)
+1057 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-label/-/react-label-2.1.8.tgz 1598ms (cache miss)
+1058 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1597ms (cache miss)
+1059 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-select/-/react-select-2.2.6.tgz 1599ms (cache miss)
+1060 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 1601ms (cache miss)
+1061 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1603ms (cache miss)
+1062 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1605ms (cache miss)
+1063 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1605ms (cache miss)
+1064 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 1605ms (cache miss)
+1065 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1613ms (cache miss)
+1066 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 1613ms (cache miss)
+1067 http fetch GET 200 https://registry.npmjs.org/@dnd-kit/accessibility/-/accessibility-3.1.1.tgz 1617ms (cache miss)
+1068 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 1623ms (cache miss)
+1069 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1623ms (cache miss)
+1070 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1623ms (cache miss)
+1071 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1626ms (cache miss)
+1072 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1629ms (cache miss)
+1073 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1631ms (cache miss)
+1074 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1634ms (cache miss)
+1075 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1635ms (cache miss)
+1076 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1639ms (cache miss)
+1077 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1644ms (cache miss)
+1078 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1644ms (cache miss)
+1079 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1711ms (cache miss)
+1080 http fetch GET 200 https://registry.npmjs.org/react-is/-/react-is-18.3.1.tgz 1714ms (cache miss)
+1081 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1724ms (cache miss)
+1082 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1726ms (cache miss)
+1083 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 1725ms (cache miss)
+1084 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 1725ms (cache miss)
+1085 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 1729ms (cache miss)
+1086 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1729ms (cache miss)
+1087 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1729ms (cache miss)
+1088 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1730ms (cache miss)
+1089 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1730ms (cache miss)
+1090 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1750ms (cache miss)
+1091 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 1757ms (cache miss)
+1092 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1766ms (cache miss)
+1093 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1772ms (cache miss)
+1094 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1772ms (cache miss)
+1095 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 1772ms (cache miss)
+1096 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1771ms (cache miss)
+1097 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1771ms (cache miss)
+1098 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 1821ms (cache miss)
+1099 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz 1821ms (cache miss)
+1100 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz 1823ms (cache miss)
+1101 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz 1835ms (cache miss)
+1102 http fetch GET 200 https://registry.npmjs.org/@radix-ui/react-toggle/-/react-toggle-1.1.10.tgz 1859ms (cache miss)
+1103 http fetch GET 200 https://registry.npmjs.org/@dnd-kit/sortable/-/sortable-10.0.0.tgz 1904ms (cache miss)
+1104 http fetch GET 200 https://registry.npmjs.org/@dnd-kit/core/-/core-6.3.1.tgz 2032ms (cache miss)
+1105 http fetch GET 200 https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz 2328ms (cache miss)
+1106 http fetch GET 200 https://registry.npmjs.org/recharts/-/recharts-2.15.4.tgz 2371ms (cache miss)
+1107 http fetch GET 200 https://registry.npmjs.org/zod/-/zod-4.3.5.tgz 2605ms (cache miss)
+1108 http fetch GET 200 https://registry.npmjs.org/lucide-react/-/lucide-react-0.562.0.tgz 4599ms (cache miss)
+1109 silly ADD node_modules/d3-path
+1110 silly ADD node_modules/d3-time-format
+1111 silly ADD node_modules/d3-format
+1112 silly ADD node_modules/d3-color
+1113 silly ADD node_modules/internmap
+1114 silly ADD node_modules/@types/d3-path
+1115 silly ADD node_modules/@types/d3-color
+1116 silly ADD node_modules/d3-timer
+1117 silly ADD node_modules/d3-time
+1118 silly ADD node_modules/d3-shape
+1119 silly ADD node_modules/d3-scale
+1120 silly ADD node_modules/d3-interpolate
+1121 silly ADD node_modules/d3-ease
+1122 silly ADD node_modules/d3-array
+1123 silly ADD node_modules/@types/d3-timer
+1124 silly ADD node_modules/@types/d3-time
+1125 silly ADD node_modules/@types/d3-shape
+1126 silly ADD node_modules/@types/d3-scale
+1127 silly ADD node_modules/@types/d3-interpolate
+1128 silly ADD node_modules/@types/d3-ease
+1129 silly ADD node_modules/@types/d3-array
+1130 silly ADD node_modules/detect-node-es
+1131 silly ADD node_modules/decimal.js-light
+1132 silly ADD node_modules/dom-helpers
+1133 silly ADD node_modules/@babel/runtime
+1134 silly ADD node_modules/react-transition-group
+1135 silly ADD node_modules/fast-equals
+1136 silly ADD node_modules/victory-vendor
+1137 silly ADD node_modules/tiny-invariant
+1138 silly ADD node_modules/recharts-scale
+1139 silly ADD node_modules/react-smooth
+1140 silly ADD node_modules/lodash
+1141 silly ADD node_modules/eventemitter3
+1142 silly ADD node_modules/get-nonce
+1143 silly ADD node_modules/use-sidecar
+1144 silly ADD node_modules/use-callback-ref
+1145 silly ADD node_modules/react-style-singleton
+1146 silly ADD node_modules/react-remove-scroll-bar
+1147 silly ADD node_modules/clsx
+1148 silly ADD node_modules/@tanstack/table-core
+1149 silly ADD node_modules/use-sync-external-store
+1150 silly ADD node_modules/@radix-ui/react-use-effect-event
+1151 silly ADD node_modules/@radix-ui/react-visually-hidden
+1152 silly ADD node_modules/@radix-ui/react-visually-hidden/node_modules/@radix-ui/react-slot
+1153 silly ADD node_modules/@radix-ui/react-visually-hidden/node_modules/@radix-ui/react-primitive
+1154 silly ADD node_modules/@radix-ui/number
+1155 silly ADD node_modules/@floating-ui/utils
+1156 silly ADD node_modules/@floating-ui/core
+1157 silly ADD node_modules/@floating-ui/dom
+1158 silly ADD node_modules/@radix-ui/rect
+1159 silly ADD node_modules/@radix-ui/react-use-rect
+1160 silly ADD node_modules/@radix-ui/react-arrow
+1161 silly ADD node_modules/@radix-ui/react-arrow/node_modules/@radix-ui/react-slot
+1162 silly ADD node_modules/@radix-ui/react-arrow/node_modules/@radix-ui/react-primitive
+1163 silly ADD node_modules/@floating-ui/react-dom
+1164 silly ADD node_modules/@radix-ui/react-roving-focus
+1165 silly ADD node_modules/@radix-ui/react-roving-focus/node_modules/@radix-ui/react-slot
+1166 silly ADD node_modules/@radix-ui/react-roving-focus/node_modules/@radix-ui/react-primitive
+1167 silly ADD node_modules/@radix-ui/react-roving-focus/node_modules/@radix-ui/react-context
+1168 silly ADD node_modules/@radix-ui/react-popper
+1169 silly ADD node_modules/@radix-ui/react-popper/node_modules/@radix-ui/react-slot
+1170 silly ADD node_modules/@radix-ui/react-popper/node_modules/@radix-ui/react-primitive
+1171 silly ADD node_modules/@radix-ui/react-popper/node_modules/@radix-ui/react-context
+1172 silly ADD node_modules/@radix-ui/react-direction
+1173 silly ADD node_modules/@radix-ui/react-collection
+1174 silly ADD node_modules/@radix-ui/react-collection/node_modules/@radix-ui/react-slot
+1175 silly ADD node_modules/@radix-ui/react-collection/node_modules/@radix-ui/react-primitive
+1176 silly ADD node_modules/@radix-ui/react-collection/node_modules/@radix-ui/react-context
+1177 silly ADD node_modules/@radix-ui/react-menu
+1178 silly ADD node_modules/@radix-ui/react-menu/node_modules/@radix-ui/react-slot
+1179 silly ADD node_modules/@radix-ui/react-menu/node_modules/@radix-ui/react-primitive
+1180 silly ADD node_modules/@radix-ui/react-menu/node_modules/@radix-ui/react-context
+1181 silly ADD node_modules/@radix-ui/react-use-escape-keydown
+1182 silly ADD node_modules/react-remove-scroll
+1183 silly ADD node_modules/aria-hidden
+1184 silly ADD node_modules/@radix-ui/react-portal
+1185 silly ADD node_modules/@radix-ui/react-portal/node_modules/@radix-ui/react-slot
+1186 silly ADD node_modules/@radix-ui/react-portal/node_modules/@radix-ui/react-primitive
+1187 silly ADD node_modules/@radix-ui/react-id
+1188 silly ADD node_modules/@radix-ui/react-focus-scope
+1189 silly ADD node_modules/@radix-ui/react-focus-scope/node_modules/@radix-ui/react-slot
+1190 silly ADD node_modules/@radix-ui/react-focus-scope/node_modules/@radix-ui/react-primitive
+1191 silly ADD node_modules/@radix-ui/react-focus-guards
+1192 silly ADD node_modules/@radix-ui/react-dismissable-layer
+1193 silly ADD node_modules/@radix-ui/react-dismissable-layer/node_modules/@radix-ui/react-slot
+1194 silly ADD node_modules/@radix-ui/react-dismissable-layer/node_modules/@radix-ui/react-primitive
+1195 silly ADD node_modules/@radix-ui/react-use-size
+1196 silly ADD node_modules/@radix-ui/react-use-previous
+1197 silly ADD node_modules/@radix-ui/react-use-controllable-state
+1198 silly ADD node_modules/@radix-ui/react-presence
+1199 silly ADD node_modules/@radix-ui/react-compose-refs
+1200 silly ADD node_modules/@radix-ui/primitive
+1201 silly ADD node_modules/@radix-ui/react-use-layout-effect
+1202 silly ADD node_modules/@radix-ui/react-use-is-hydrated
+1203 silly ADD node_modules/@radix-ui/react-use-callback-ref
+1204 silly ADD node_modules/@radix-ui/react-primitive
+1205 silly ADD node_modules/@radix-ui/react-context
+1206 silly ADD node_modules/@dnd-kit/accessibility
+1207 silly ADD node_modules/zod
+1208 silly ADD node_modules/vaul
+1209 silly ADD node_modules/sonner
+1210 silly ADD node_modules/recharts
+1211 silly ADD node_modules/recharts/node_modules/react-is
+1212 silly ADD node_modules/next-themes
+1213 silly ADD node_modules/lucide-react
+1214 silly ADD node_modules/class-variance-authority
+1215 silly ADD node_modules/@tanstack/react-table
+1216 silly ADD node_modules/@radix-ui/react-tooltip
+1217 silly ADD node_modules/@radix-ui/react-tooltip/node_modules/@radix-ui/react-slot
+1218 silly ADD node_modules/@radix-ui/react-tooltip/node_modules/@radix-ui/react-primitive
+1219 silly ADD node_modules/@radix-ui/react-tooltip/node_modules/@radix-ui/react-context
+1220 silly ADD node_modules/@radix-ui/react-toggle-group
+1221 silly ADD node_modules/@radix-ui/react-toggle-group/node_modules/@radix-ui/react-slot
+1222 silly ADD node_modules/@radix-ui/react-toggle-group/node_modules/@radix-ui/react-primitive
+1223 silly ADD node_modules/@radix-ui/react-toggle-group/node_modules/@radix-ui/react-context
+1224 silly ADD node_modules/@radix-ui/react-toggle
+1225 silly ADD node_modules/@radix-ui/react-toggle/node_modules/@radix-ui/react-slot
+1226 silly ADD node_modules/@radix-ui/react-toggle/node_modules/@radix-ui/react-primitive
+1227 silly ADD node_modules/@radix-ui/react-tabs
+1228 silly ADD node_modules/@radix-ui/react-tabs/node_modules/@radix-ui/react-slot
+1229 silly ADD node_modules/@radix-ui/react-tabs/node_modules/@radix-ui/react-primitive
+1230 silly ADD node_modules/@radix-ui/react-tabs/node_modules/@radix-ui/react-context
+1231 silly ADD node_modules/@radix-ui/react-slot
+1232 silly ADD node_modules/@radix-ui/react-separator
+1233 silly ADD node_modules/@radix-ui/react-select
+1234 silly ADD node_modules/@radix-ui/react-select/node_modules/@radix-ui/react-slot
+1235 silly ADD node_modules/@radix-ui/react-select/node_modules/@radix-ui/react-primitive
+1236 silly ADD node_modules/@radix-ui/react-select/node_modules/@radix-ui/react-context
+1237 silly ADD node_modules/@radix-ui/react-label
+1238 silly ADD node_modules/@radix-ui/react-dropdown-menu
+1239 silly ADD node_modules/@radix-ui/react-dropdown-menu/node_modules/@radix-ui/react-slot
+1240 silly ADD node_modules/@radix-ui/react-dropdown-menu/node_modules/@radix-ui/react-primitive
+1241 silly ADD node_modules/@radix-ui/react-dropdown-menu/node_modules/@radix-ui/react-context
+1242 silly ADD node_modules/@radix-ui/react-dialog
+1243 silly ADD node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-slot
+1244 silly ADD node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-primitive
+1245 silly ADD node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-context
+1246 silly ADD node_modules/@radix-ui/react-checkbox
+1247 silly ADD node_modules/@radix-ui/react-checkbox/node_modules/@radix-ui/react-slot
+1248 silly ADD node_modules/@radix-ui/react-checkbox/node_modules/@radix-ui/react-primitive
+1249 silly ADD node_modules/@radix-ui/react-checkbox/node_modules/@radix-ui/react-context
+1250 silly ADD node_modules/@radix-ui/react-avatar
+1251 silly ADD node_modules/@dnd-kit/utilities
+1252 silly ADD node_modules/@dnd-kit/sortable
+1253 silly ADD node_modules/@dnd-kit/modifiers
+1254 silly ADD node_modules/@dnd-kit/core
+1255 verbose cwd /Users/finlaysturzaker/Desktop/CreatorFirst
+1256 verbose os Darwin 24.6.0
+1257 verbose node v24.10.0
+1258 verbose npm  v11.6.0
+1259 verbose exit 0
+1260 info ok

@@ -22,20 +22,11 @@ export default async function CreatorAppLayout({
     );
   }
 
-  const navItems = [
-    { href: "/app/creator", label: "Home" },
-    { href: "/app/creator/contracts", label: "Browse Contracts" },
-    { href: "/app/creator/saved", label: "Saved" },
-    { href: "/app/creator/applications", label: "Applications" },
-    { href: "/app/creator/profile", label: "Public Profile" },
-    { href: "/app/creator/settings", label: "Settings" },
-  ];
-
   return (
     <AppShell
       email={user.email ?? null}
+      displayName={profile.display_name ?? null}
       role={profile.role ?? "creator"}
-      navItems={navItems}
     >
       {children}
     </AppShell>

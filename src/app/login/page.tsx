@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Suspense } from "react";
 import AuthForm from "@/components/auth-form";
 
 export default function LoginPage() {
@@ -18,7 +19,9 @@ export default function LoginPage() {
               place.
             </p>
           </div>
-          <AuthForm mode="login" />
+          <Suspense fallback={null}>
+            <AuthForm mode="login" />
+          </Suspense>
         </div>
       </div>
     </main>

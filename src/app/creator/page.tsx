@@ -1,7 +1,1 @@
-import { redirect } from "next/navigation";
-
-export const dynamic = "force-dynamic";
-
-export default function CreatorDashboard() {
-  redirect("/app/creator");
-}
+export { default, dynamic } from "@/app/app/creator/page";

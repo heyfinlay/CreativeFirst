@@ -1,7 +1,1 @@
-import { redirect } from "next/navigation";
-
-export const dynamic = "force-dynamic";
-
-export default function RoleOnboardingPage() {
-  redirect("/app/onboarding");
-}
+export { default, dynamic } from "@/app/app/onboarding/page";

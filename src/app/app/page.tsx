@@ -1,11 +1,14 @@
 import { redirect } from "next/navigation";
-import { ensureProfile, requireUser } from "@/lib/auth/guards";
+import { getAuthedContext } from "@/lib/auth/guards";
 
 export const dynamic = "force-dynamic";
 
 export default async function AppEntryPage() {
-  const { user } = await requireUser("/app");
-  const { profile, error } = await ensureProfile(user.id);
+  const { user, profile, error } = await getAuthedContext();
+
+  if (!user) {
+    redirect("/login?next=/app");
+  }
 
   if (error) {
     return (
@@ -16,8 +19,12 @@ export default async function AppEntryPage() {
     );
   }
 
-  if (!profile?.role) {
-    redirect("/app/onboarding?next=/app");
+  if (!profile) {
+    redirect("/app/onboarding?next=/app&reason=profile");
+  }
+
+  if (!profile.role) {
+    redirect("/app/onboarding?next=/app&reason=role");
   }
 
   redirect(profile.role === "creator" ? "/app/creator" : "/app/brand");

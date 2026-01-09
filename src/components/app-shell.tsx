@@ -1,79 +1,108 @@
-import Link from "next/link";
-import SignOutButton from "@/components/sign-out-button";
+"use client"
 
-type NavItem = { href: string; label: string };
+import type { ReactNode } from "react"
+import {
+  BarChart3Icon,
+  ClipboardListIcon,
+  FileTextIcon,
+  LayoutDashboardIcon,
+  PlusCircleIcon,
+  SettingsIcon,
+  UserCircleIcon,
+} from "lucide-react"
+import type { LucideIcon } from "lucide-react"
+
+import { AppSidebar } from "@/components/app-sidebar"
+import { SiteHeader } from "@/components/site-header"
+import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar"
+
+type Role = "creator" | "brand" | "admin"
 
 type AppShellProps = {
-  email: string | null;
-  role: "creator" | "brand" | "admin";
-  navItems: NavItem[];
-  children: React.ReactNode;
-};
+  email: string | null
+  displayName?: string | null
+  role: Role
+  showOnboardingLink?: boolean
+  children: ReactNode
+}
+
+type NavItem = {
+  title: string
+  url: string
+  icon: LucideIcon
+}
+
+const commonNav: NavItem[] = [
+  { title: "Home", url: "/app", icon: LayoutDashboardIcon },
+  { title: "Account", url: "/app/settings", icon: SettingsIcon },
+]
+
+const onboardingNav: NavItem = {
+  title: "Onboarding",
+  url: "/app/onboarding",
+  icon: ClipboardListIcon,
+}
+
+const creatorNav: NavItem[] = [
+  { title: "Overview", url: "/app/creator", icon: BarChart3Icon },
+  { title: "Contracts", url: "/app/creator/contracts", icon: FileTextIcon },
+  { title: "Applications", url: "/app/creator/applications", icon: ClipboardListIcon },
+  { title: "Public Profile", url: "/app/creator/profile", icon: UserCircleIcon },
+]
+
+const brandNav: NavItem[] = [
+  { title: "Overview", url: "/app/brand", icon: BarChart3Icon },
+  { title: "Contracts", url: "/app/brand/contracts", icon: FileTextIcon },
+  { title: "New Contract", url: "/app/brand/contracts/new", icon: PlusCircleIcon },
+]
+
+function buildNavSections(role: Role, showOnboardingLink?: boolean) {
+  const sections: Array<{ label: string; items: NavItem[] }> = []
+
+  const commonItems = [...commonNav]
+  if (showOnboardingLink) {
+    commonItems.push(onboardingNav)
+  }
+
+  sections.push({ label: "Common", items: commonItems })
+
+  if (role === "creator") {
+    sections.push({ label: "Creator", items: creatorNav })
+  } else if (role === "brand") {
+    sections.push({ label: "Brand", items: brandNav })
+  } else {
+    sections.push({ label: "Creator", items: creatorNav })
+    sections.push({ label: "Brand", items: brandNav })
+  }
+
+  return sections
+}
 
 export default function AppShell({
   email,
+  displayName,
   role,
-  navItems,
+  showOnboardingLink,
   children,
 }: AppShellProps) {
+  const navSections = buildNavSections(role, showOnboardingLink)
+  const userLabel = displayName || email || "Account"
+
   return (
-    <div className="min-h-screen bg-sand-50">
-      <div className="mx-auto flex max-w-6xl gap-6 px-6 py-6">
-        <aside className="hidden w-64 flex-col gap-6 rounded-3xl border border-ink-900/10 bg-white/80 p-6 shadow-soft lg:flex">
-          <div className="flex flex-col gap-2">
-            <Link className="font-display text-lg text-ink-900" href="/">
-              Creative First
-            </Link>
-            <span className="text-xs uppercase tracking-[0.2em] text-ink-700">
-              {role}
-            </span>
+    <SidebarProvider>
+      <AppSidebar
+        role={role}
+        user={{ name: userLabel, email: email ?? "" }}
+        sections={navSections}
+      />
+      <SidebarInset>
+        <SiteHeader title={`${role} dashboard`} />
+        <div className="flex flex-1 flex-col">
+          <div className="@container/main flex flex-1 flex-col gap-6 px-4 py-6 lg:px-6">
+            {children}
           </div>
-          <nav className="flex flex-col gap-2 text-sm text-ink-700">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="rounded-xl px-3 py-2 transition hover:bg-sand-100 hover:text-ink-900"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-          <div className="mt-auto flex flex-col gap-2 rounded-2xl border border-ink-900/10 bg-sand-50 p-4 text-xs text-ink-700">
-            <span className="font-semibold text-ink-900">Signed in</span>
-            <span>{email ?? "—"}</span>
-            <SignOutButton />
-          </div>
-        </aside>
-        <div className="flex flex-1 flex-col gap-6">
-          <header className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-ink-900/10 bg-white/80 px-6 py-4 shadow-soft lg:hidden">
-            <div className="flex flex-col">
-              <Link className="font-display text-lg text-ink-900" href="/">
-                Creative First
-              </Link>
-              <span className="text-xs uppercase tracking-[0.2em] text-ink-700">
-                {role}
-              </span>
-            </div>
-            <div className="flex flex-col items-end gap-2 text-xs text-ink-700">
-              <span>{email ?? "—"}</span>
-              <SignOutButton />
-            </div>
-            <nav className="flex w-full flex-wrap gap-2 text-xs text-ink-700">
-              {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="rounded-full border border-ink-900/10 bg-white px-3 py-1.5"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </nav>
-          </header>
-          <main className="flex-1">{children}</main>
         </div>
-      </div>
-    </div>
-  );
+      </SidebarInset>
+    </SidebarProvider>
+  )
 }

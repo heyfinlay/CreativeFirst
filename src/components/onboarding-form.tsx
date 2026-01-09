@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
+import { safeNextPath } from "@/lib/auth/redirect";
 
 type Role = "creator" | "brand";
 
@@ -109,10 +110,8 @@ export default function OnboardingForm({
       }
 
       setMessage("Saved.");
-      const target =
-        nextPath ||
-        (role === "brand" ? "/app/brand" : "/app/creator");
-      router.replace(target);
+      const fallbackTarget = role === "brand" ? "/app/brand" : "/app/creator";
+      router.replace(safeNextPath(nextPath, fallbackTarget));
       router.refresh();
     });
   };

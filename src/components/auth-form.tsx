@@ -1,13 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { createBrowserSupabaseClient } from "@/lib/supabase/client";
+import { safeNextPath } from "@/lib/auth/redirect";
 
 type AuthMode = "login" | "signup";
 
 export default function AuthForm({ mode }: { mode: AuthMode }) {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -44,12 +46,20 @@ export default function AuthForm({ mode }: { mode: AuthMode }) {
       }
     }
 
+    const nextParam = searchParams?.get("next");
+    const nextPath = safeNextPath(nextParam);
+
     if (!profile?.role) {
-      router.replace("/app/onboarding");
+      const onboardingTarget = `/app/onboarding?next=${encodeURIComponent(
+        nextPath
+      )}`;
+      router.replace(onboardingTarget);
       return;
     }
 
-    router.replace(profile.role === "creator" ? "/app/creator" : "/app/brand");
+    const fallbackTarget =
+      profile.role === "creator" ? "/app/creator" : "/app/brand";
+    router.replace(safeNextPath(nextPath, fallbackTarget));
   };
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {

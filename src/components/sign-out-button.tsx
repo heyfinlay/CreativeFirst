@@ -4,7 +4,11 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { createBrowserSupabaseClient } from "@/lib/supabase/client";
 
-export default function SignOutButton() {
+type SignOutButtonProps = {
+  className?: string;
+};
+
+export default function SignOutButton({ className }: SignOutButtonProps) {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
 
@@ -19,7 +23,10 @@ export default function SignOutButton() {
   return (
     <button
       type="button"
-      className="rounded-full border border-ink-900/20 bg-white/80 px-4 py-2 text-xs font-semibold text-ink-900 transition hover:-translate-y-0.5"
+      className={
+        className ??
+        "rounded-full border border-ink-900/20 bg-white/80 px-4 py-2 text-xs font-semibold text-ink-900 transition hover:-translate-y-0.5"
+      }
       onClick={handleSignOut}
       disabled={loading}
     >

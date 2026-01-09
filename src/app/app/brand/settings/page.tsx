@@ -21,7 +21,8 @@ export default async function BrandSettingsPage() {
 
   const { brand, error: brandError } = await ensureBrandRow(
     { id: user.id, email: user.email },
-    profile
+    profile,
+    "/app/brand/settings"
   );
 
   if (brandError || !brand) {

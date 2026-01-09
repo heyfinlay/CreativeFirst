@@ -15,7 +15,7 @@ export default async function AppOnboardingPage({
   searchParams?: { next?: string };
 }) {
   const { user } = await requireUser("/app/onboarding");
-  const { profile, error } = await ensureProfile(user.id);
+  const { profile, error } = await ensureProfile(user.id, "/app/onboarding");
 
   if (error) {
     return (
@@ -62,13 +62,14 @@ export default async function AppOnboardingPage({
 
     if (role === "brand") {
       const { profile: latestProfile, error: profileError } =
-        await ensureProfile(actionUser.id);
+        await ensureProfile(actionUser.id, "/app/onboarding");
       if (profileError || !latestProfile) {
         return { ok: false, message: profileError ?? "Profile error." };
       }
       const { error: brandError } = await ensureBrandRow(
         { id: actionUser.id, email: actionUser.email },
-        latestProfile
+        latestProfile,
+        "/app/onboarding"
       );
       if (brandError) {
         return { ok: false, message: brandError };
@@ -77,7 +78,7 @@ export default async function AppOnboardingPage({
 
     if (role === "creator") {
       const { profile: latestProfile, error: profileError } =
-        await ensureProfile(actionUser.id);
+        await ensureProfile(actionUser.id, "/app/onboarding");
       if (profileError || !latestProfile) {
         return { ok: false, message: profileError ?? "Profile error." };
       }
